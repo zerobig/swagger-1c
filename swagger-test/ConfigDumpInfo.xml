@@ -5,7 +5,7 @@
 		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервисОписание.Module" id="30ae2968-02fa-40f6-84bb-248ae251058f.0" configVersion="b7bca439a1f2d59d6b7e5bc3210886ff06588052"/>
 		<Metadata name="CommonModule.ПередачаДанныхОписание" id="ce90835d-dc20-4c6c-a56e-579abff9e8d3" configVersion="547f15cecd45bf21262d2fbe1b61df0c1c2dff36"/>
 		<Metadata name="CommonModule.ПередачаДанныхОписание.Module" id="ce90835d-dc20-4c6c-a56e-579abff9e8d3.0" configVersion="fa794df111b29b3bff06256dd9f5866167135cfa"/>
-		<Metadata name="Configuration.SwaggerTest" id="1d858fa3-7832-4213-913d-abe84f0a627e" configVersion="d1f2a7991433741a15fd00b5ce189fba530c5159"/>
+		<Metadata name="Configuration.SwaggerTest" id="1d858fa3-7832-4213-913d-abe84f0a627e" configVersion="c366363b0ad84caa259abb05b2c4e2001d6e66ba"/>
 		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис" id="af6ba78c-43cb-492b-89c8-07f08a3f1007" configVersion="b462c84d9309767843e9b9de1ee5a9c1799b1eaa">
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.Тестовый" id="41774295-8210-4735-aeb9-ffb4f4487cc6"/>
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.Тестовый.Method.POST" id="aed26462-177c-4451-8463-22fd47f340dc"/>
