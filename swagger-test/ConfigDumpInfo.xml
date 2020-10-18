@@ -2,7 +2,7 @@
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.9">
 	<ConfigVersions>
 		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервисОписание" id="30ae2968-02fa-40f6-84bb-248ae251058f" configVersion="91d3743cbc3a90cc494b5de373cd01fa6eab91b8"/>
-		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервисОписание.Module" id="30ae2968-02fa-40f6-84bb-248ae251058f.0" configVersion="b7bca439a1f2d59d6b7e5bc3210886ff06588052"/>
+		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервисОписание.Module" id="30ae2968-02fa-40f6-84bb-248ae251058f.0" configVersion="a7e7854dc0dd5f86a1204218e42bfa7ee94d9435"/>
 		<Metadata name="CommonModule.ПередачаДанныхОписание" id="ce90835d-dc20-4c6c-a56e-579abff9e8d3" configVersion="547f15cecd45bf21262d2fbe1b61df0c1c2dff36"/>
 		<Metadata name="CommonModule.ПередачаДанныхОписание.Module" id="ce90835d-dc20-4c6c-a56e-579abff9e8d3.0" configVersion="fa794df111b29b3bff06256dd9f5866167135cfa"/>
 		<Metadata name="Configuration.SwaggerTest" id="1d858fa3-7832-4213-913d-abe84f0a627e" configVersion="c366363b0ad84caa259abb05b2c4e2001d6e66ba"/>
