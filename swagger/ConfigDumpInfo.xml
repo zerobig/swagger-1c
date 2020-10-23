@@ -2,7 +2,7 @@
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.9">
 	<ConfigVersions>
 		<Metadata name="CommonModule.Swag_ФормированиеОписаний" id="e458be48-4fab-4680-9df3-5184ab84eb0a" configVersion="ba516e642f868d3cee82af12ac6520378ec64b85"/>
-		<Metadata name="CommonModule.Swag_ФормированиеОписаний.Module" id="e458be48-4fab-4680-9df3-5184ab84eb0a.0" configVersion="4c4531d5a757f9358793aa4de87931bb1e505209"/>
+		<Metadata name="CommonModule.Swag_ФормированиеОписаний.Module" id="e458be48-4fab-4680-9df3-5184ab84eb0a.0" configVersion="c427820d6cb3abd6a6e6208842ca97102cac92e0"/>
 		<Metadata name="CommonTemplate.Swag_favicon_16x16_png" id="af2345ff-1ec2-4d67-84b3-af5e498ce117" configVersion="cbee694fa5c50cda35d1eb4006aeafe9d0a28e63"/>
 		<Metadata name="CommonTemplate.Swag_favicon_16x16_png.Template" id="af2345ff-1ec2-4d67-84b3-af5e498ce117.0" configVersion="8a68591e923303c58feaafe586e912fed1d555cd"/>
 		<Metadata name="CommonTemplate.Swag_favicon_32x32_png" id="d0557e0b-634c-4bae-b001-e90cb96d3bda" configVersion="3ab1da1f420ecbc2bf8f483e8e1ef2ef1f262328"/>
