@@ -12,17 +12,17 @@
 		<Metadata name="CommonTemplate.Swag_index_html" id="ecb5a1b6-3a51-4393-a899-2c28b5f70038" configVersion="af6bbf2670947ad6d0a754bcdd59591597404909"/>
 		<Metadata name="CommonTemplate.Swag_index_html.Template" id="ecb5a1b6-3a51-4393-a899-2c28b5f70038.0" configVersion="335df2ccbf3d1f500bb22b31cd766e63e64ec536"/>
 		<Metadata name="CommonTemplate.Swag_swagger_ui_bundle_js" id="394b5ed2-8183-460e-ba54-cc5b1f05217d" configVersion="8f5bf856a46e7c3cc82fdbb26886954414aa0bee"/>
-		<Metadata name="CommonTemplate.Swag_swagger_ui_bundle_js.Template" id="394b5ed2-8183-460e-ba54-cc5b1f05217d.0" configVersion="4bad4d1d6e82beb353ddb5eee6240b2ba6bdc9ab"/>
+		<Metadata name="CommonTemplate.Swag_swagger_ui_bundle_js.Template" id="394b5ed2-8183-460e-ba54-cc5b1f05217d.0" configVersion="b8395905334818ffefcd5f12059aba1673acf555"/>
 		<Metadata name="CommonTemplate.Swag_swagger_ui_css" id="1b0a9ae0-ec33-4c02-b218-22c6572c266a" configVersion="e6075875c51b36d375ea77fbb3c2ee803029b490"/>
-		<Metadata name="CommonTemplate.Swag_swagger_ui_css.Template" id="1b0a9ae0-ec33-4c02-b218-22c6572c266a.0" configVersion="3faf0ce97fbe919f5d4d6c99caf8e514b5c6324f"/>
+		<Metadata name="CommonTemplate.Swag_swagger_ui_css.Template" id="1b0a9ae0-ec33-4c02-b218-22c6572c266a.0" configVersion="c6c759482f449dd9087a11578a73ed86d3d9d1b2"/>
 		<Metadata name="CommonTemplate.Swag_swagger_ui_standalone_preset_js" id="0d01bb32-1eea-4bae-9e74-0a1d1c623e50" configVersion="711e4c846296f1789877e54df16268de2de78e8c"/>
-		<Metadata name="CommonTemplate.Swag_swagger_ui_standalone_preset_js.Template" id="0d01bb32-1eea-4bae-9e74-0a1d1c623e50.0" configVersion="7f00566527dcb6601d31d658d32ee588eb6c8271"/>
-		<Metadata name="Configuration.Swagger" id="abaf8ede-1075-4f12-9805-16339cdb0dbd" configVersion="5f911901f2d48c59db61a298bad8ece90f64c7d4"/>
+		<Metadata name="CommonTemplate.Swag_swagger_ui_standalone_preset_js.Template" id="0d01bb32-1eea-4bae-9e74-0a1d1c623e50.0" configVersion="a6abc4fb66a15a529109f8eca1f22aa220c5a065"/>
+		<Metadata name="Configuration.Swagger" id="abaf8ede-1075-4f12-9805-16339cdb0dbd" configVersion="1a3ae715f70b12532277eb659737214c8c6506a6"/>
 		<Metadata name="HTTPService.Swag_Сервис" id="cae44cbc-1a88-441c-b30c-5e95da0e3cd6" configVersion="166e6147c28a827ba5adae9ee006590ca49e0a72">
 			<Metadata name="HTTPService.Swag_Сервис.URLTemplate.SwaggerFile" id="43b9a4d4-7f4f-418f-948f-4d7ca95042d0"/>
 			<Metadata name="HTTPService.Swag_Сервис.URLTemplate.SwaggerFile.Method.GET" id="c3cf2edb-950b-4f9d-9e0d-c7e46714e711"/>
 		</Metadata>
-		<Metadata name="HTTPService.Swag_Сервис.Module" id="cae44cbc-1a88-441c-b30c-5e95da0e3cd6.0" configVersion="21512f7bcba5207ff95a0d7b14ab876401093db5"/>
+		<Metadata name="HTTPService.Swag_Сервис.Module" id="cae44cbc-1a88-441c-b30c-5e95da0e3cd6.0" configVersion="50153622abe8b8d2dd9e646a66eac2f5b915e0f4"/>
 		<Metadata name="Language.Русский" id="66c5bb2a-43ce-4fd6-96c4-40f4822688ba" configVersion="962b58630b6b74fa6cc689384d53a255ab8e12a6"/>
 	</ConfigVersions>
 </ConfigDumpInfo>
