@@ -47,7 +47,7 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor/>
-			<Version>1.1.1</Version>
+			<Version>1.1.2</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
@@ -64,6 +64,7 @@
 			<CommonTemplate>Swag_favicon_16x16_png</CommonTemplate>
 			<CommonTemplate>Swag_favicon_32x32_png</CommonTemplate>
 			<CommonModule>Swag_ФормированиеОписаний</CommonModule>
+			<CommonModule>Swag_ОбработкаHTTP</CommonModule>
 			<HTTPService>Swag_Сервис</HTTPService>
 		</ChildObjects>
 	</Configuration>

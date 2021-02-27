@@ -2,16 +2,26 @@
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.9">
 	<ConfigVersions>
 		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервисОписание" id="30ae2968-02fa-40f6-84bb-248ae251058f" configVersion="91d3743cbc3a90cc494b5de373cd01fa6eab91b8"/>
-		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервисОписание.Module" id="30ae2968-02fa-40f6-84bb-248ae251058f.0" configVersion="1224cebd5653269fe7e9369ab5b5f35e106b470b"/>
+		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервисОписание.Module" id="30ae2968-02fa-40f6-84bb-248ae251058f.0" configVersion="5db8ff874195f1208779e41d15be2e300c33363d"/>
 		<Metadata name="CommonModule.ПередачаДанныхОписание" id="ce90835d-dc20-4c6c-a56e-579abff9e8d3" configVersion="547f15cecd45bf21262d2fbe1b61df0c1c2dff36"/>
 		<Metadata name="CommonModule.ПередачаДанныхОписание.Module" id="ce90835d-dc20-4c6c-a56e-579abff9e8d3.0" configVersion="9bd979bc1fcf2f67eca00984504cc02a25400c1e"/>
-		<Metadata name="Configuration.SwaggerTest" id="1d858fa3-7832-4213-913d-abe84f0a627e" configVersion="fb3eed6b481ea65e8462af74bd6244ad6698c7c5"/>
-		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис" id="af6ba78c-43cb-492b-89c8-07f08a3f1007" configVersion="b462c84d9309767843e9b9de1ee5a9c1799b1eaa">
+		<Metadata name="Configuration.SwaggerTest" id="1d858fa3-7832-4213-913d-abe84f0a627e" configVersion="18e45c7dea7959fe0766731b1787be73252b53df"/>
+		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис" id="af6ba78c-43cb-492b-89c8-07f08a3f1007" configVersion="edd7e0e380e0cf555c9a4577ca7aae2472a3f1b3">
+			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.ОшибкаНетНужногоКодаОтвета" id="029527c4-994b-47c7-8ad2-24ed5d21dacf"/>
+			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.ОшибкаНетНужногоКодаОтвета.Method.GET" id="0fa47116-f36d-4daa-a5d4-ae6cb7eb4645"/>
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.Тестовый" id="41774295-8210-4735-aeb9-ffb4f4487cc6"/>
+			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.ОшибкаНеЗаданТипMIME.Method.GET" id="59479e28-fe9c-45d8-b454-4754e59b0a8f"/>
+			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.ОшибкаНетОписания.Method.GET" id="708c3f5c-44cc-4eb4-86f0-4aba71dca9b0"/>
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.Тестовый.Method.POST" id="aed26462-177c-4451-8463-22fd47f340dc"/>
+			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.ОшибкаНеЗаданТипMIME" id="b119b99e-bf5d-4fd5-8c3b-4cdd757f6d97"/>
+			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.ОшибкаНетОтветов" id="b7c5a9ce-861e-40e6-9bdc-ff589b785d3b"/>
+			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.ОшибкаНетОтветов.Method.GET" id="bb6d19cd-9b5d-4e22-aa31-fc3a95e6c14b"/>
+			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.ОшибкаНекорректныйТипMIME.Method.GET" id="d3525e15-e781-4f10-b38b-cad05104e1ad"/>
+			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.ОшибкаНетОписания" id="ec3fc645-f449-4d60-be08-70a391c2d386"/>
+			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.ОшибкаНекорректныйТипMIME" id="f3b8d253-296f-4899-bc3e-e09cec76ae43"/>
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.Тестовый.Method.GET" id="f465198e-8a7b-4658-8258-ea8efac62635"/>
 		</Metadata>
-		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.Module" id="af6ba78c-43cb-492b-89c8-07f08a3f1007.0" configVersion="29c3559fad2e47f6852fe403dee2ed0d7bb79259"/>
+		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.Module" id="af6ba78c-43cb-492b-89c8-07f08a3f1007.0" configVersion="0669531c92f912836f242c466541f8f7da0fe18d"/>
 		<Metadata name="Language.Русский" id="4668565d-6cab-4963-8498-fb233767939a" configVersion="1e5e9d1519f14c1e5fd245013d2a12c903a2ee55"/>
 	</ConfigVersions>
 </ConfigDumpInfo>
