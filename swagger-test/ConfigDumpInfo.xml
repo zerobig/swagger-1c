@@ -5,7 +5,7 @@
 		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервисОписание.Module" id="30ae2968-02fa-40f6-84bb-248ae251058f.0" configVersion="5db8ff874195f1208779e41d15be2e300c33363d"/>
 		<Metadata name="CommonModule.ПередачаДанныхОписание" id="ce90835d-dc20-4c6c-a56e-579abff9e8d3" configVersion="547f15cecd45bf21262d2fbe1b61df0c1c2dff36"/>
 		<Metadata name="CommonModule.ПередачаДанныхОписание.Module" id="ce90835d-dc20-4c6c-a56e-579abff9e8d3.0" configVersion="9bd979bc1fcf2f67eca00984504cc02a25400c1e"/>
-		<Metadata name="Configuration.SwaggerTest" id="1d858fa3-7832-4213-913d-abe84f0a627e" configVersion="18e45c7dea7959fe0766731b1787be73252b53df"/>
+		<Metadata name="Configuration.SwaggerTest" id="1d858fa3-7832-4213-913d-abe84f0a627e" configVersion="99b8aeed6c545ff12ec71ff7abfe6c362c59b668"/>
 		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис" id="af6ba78c-43cb-492b-89c8-07f08a3f1007" configVersion="edd7e0e380e0cf555c9a4577ca7aae2472a3f1b3">
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.ОшибкаНетНужногоКодаОтвета" id="029527c4-994b-47c7-8ad2-24ed5d21dacf"/>
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.ОшибкаНетНужногоКодаОтвета.Method.GET" id="0fa47116-f36d-4daa-a5d4-ae6cb7eb4645"/>
@@ -21,7 +21,7 @@
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.ОшибкаНекорректныйТипMIME" id="f3b8d253-296f-4899-bc3e-e09cec76ae43"/>
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.Тестовый.Method.GET" id="f465198e-8a7b-4658-8258-ea8efac62635"/>
 		</Metadata>
-		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.Module" id="af6ba78c-43cb-492b-89c8-07f08a3f1007.0" configVersion="0669531c92f912836f242c466541f8f7da0fe18d"/>
+		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.Module" id="af6ba78c-43cb-492b-89c8-07f08a3f1007.0" configVersion="d075b3a4465fb12402dcb339c7ae43ac643be39f"/>
 		<Metadata name="Language.Русский" id="4668565d-6cab-4963-8498-fb233767939a" configVersion="1e5e9d1519f14c1e5fd245013d2a12c903a2ee55"/>
 	</ConfigVersions>
 </ConfigDumpInfo>
