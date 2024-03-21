@@ -1,0 +1,12 @@
+{
+  "name": "swagger-1c",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "npm run build:extension && npm run build:test",
+    "build:extension": "cd scripts && ext2cfe.cmd ../swagger ../dist/swagger.cfe Swagger",
+    "build:test": "cd scripts && ext2cfe.cmd ../swagger-test ../dist/swagger-test.cfe SwaggerTest"
+  },
+  "keywords": [],
+  "author": "Bushin Ilya",
+  "license": "MIT"
+}
