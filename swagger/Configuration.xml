@@ -48,7 +48,6 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor/>
 			<Version>1.1.4</Version>
-			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
 			<Copyright/>
@@ -56,7 +55,6 @@
 			<ConfigurationInformationAddress/>
 		</Properties>
 		<ChildObjects>
-			<Language>Русский</Language>
 			<CommonTemplate>Swag_index_html</CommonTemplate>
 			<CommonTemplate>Swag_swagger_ui_css</CommonTemplate>
 			<CommonTemplate>Swag_swagger_ui_bundle_js</CommonTemplate>

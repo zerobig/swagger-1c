@@ -48,7 +48,6 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor/>
 			<Version>1.1.3</Version>
-			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
 			<Copyright/>
@@ -56,7 +55,6 @@
 			<ConfigurationInformationAddress/>
 		</Properties>
 		<ChildObjects>
-			<Language>Русский</Language>
 			<CommonModule>SwagTest_Тестовый_HTTPСервисОписание</CommonModule>
 			<CommonModule>ПередачаДанныхОписание</CommonModule>
 			<HTTPService>SwagTest_Тестовый_HTTPСервис</HTTPService>
