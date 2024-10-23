@@ -1,5 +1,7 @@
 # Swagger для 1С:Предприятия 8
 
+[![OpenYellow](https://img.shields.io/endpoint?url=https://openyellow.org/data/badges/2/304872931.json)](https://openyellow.org/grid?data=top&repo=304872931)
+
 Данный продукт предназначен для организации процесса документирования HTTP сервисов конфигураций написанных на платформе 1С:Предприятие.
 ![image](https://github.com/zerobig/swagger-1c/blob/master/doc/images/screenshot_1.png)
 
