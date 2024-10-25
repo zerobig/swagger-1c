@@ -1,27 +1,32 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
-	<CommonModule uuid="f476ceae-be3c-4bd5-9e99-ae8083decdaa">
+	<DataProcessor uuid="3d662e38-90d5-4b00-81e8-6b39ba8dcfb3">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.Swag_ПроцессорОписанийОбъектов" category="Object">
+				<xr:TypeId>5c26a926-3456-4ec2-bc77-359d8d5b047c</xr:TypeId>
+				<xr:ValueId>6095f9e8-eb26-4c9e-ae53-f1e4abec9e9c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.Swag_ПроцессорОписанийОбъектов" category="Manager">
+				<xr:TypeId>c4fcfa66-fba7-45bd-8401-295f84714f82</xr:TypeId>
+				<xr:ValueId>21d85d71-d606-4ca4-95d3-04af3cf54843</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
 		<Properties>
-			<Name>SwagTest_Тестовый_HTTPСервис2Описание</Name>
+			<Name>Swag_ПроцессорОписанийОбъектов</Name>
 			<Synonym>
 				<v8:item>
-					<v8:lang/>
-					<v8:content>Swag test тестовый HTTPСервис2 описание</v8:content>
-				</v8:item>
-				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Swag test тестовый HTTPСервис2 описание</v8:content>
+					<v8:content>Процессор описаний объектов</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<Global>false</Global>
-			<ClientManagedApplication>false</ClientManagedApplication>
-			<Server>true</Server>
-			<ExternalConnection>false</ExternalConnection>
-			<ClientOrdinaryApplication>false</ClientOrdinaryApplication>
-			<ServerCall>false</ServerCall>
-			<Privileged>false</Privileged>
-			<ReturnValuesReuse>DontUse</ReturnValuesReuse>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
 		</Properties>
-	</CommonModule>
+		<ChildObjects/>
+	</DataProcessor>
 </MetaDataObject>

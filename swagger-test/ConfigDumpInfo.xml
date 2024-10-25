@@ -2,14 +2,16 @@
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.18">
 	<ConfigVersions>
 		<Metadata name="CommonModule.SwagTest_YAxUnit_Тесты" id="25571919-32f4-4296-9a8e-99b0f3113e1a" configVersion="25c2f7f11369609a6ddda6d4acf761acc996fa65"/>
-		<Metadata name="CommonModule.SwagTest_YAxUnit_Тесты.Module" id="25571919-32f4-4296-9a8e-99b0f3113e1a.0" configVersion="a2a147f0f051c125824857271450212e21dcc8c1"/>
-		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервис2Описание" id="f476ceae-be3c-4bd5-9e99-ae8083decdaa" configVersion="68f4867b8ffda6ea69a115e4d0a95f2c738bd381"/>
-		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервис2Описание.Module" id="f476ceae-be3c-4bd5-9e99-ae8083decdaa.0" configVersion="2ebba89c6d0599abad269c778b36f3207bde23bb"/>
+		<Metadata name="CommonModule.SwagTest_YAxUnit_Тесты.Module" id="25571919-32f4-4296-9a8e-99b0f3113e1a.0" configVersion="a2fc1d0ba904f4b34222862fd0cdcab34d9374c7"/>
+		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервис2Описание" id="f476ceae-be3c-4bd5-9e99-ae8083decdaa" configVersion="a8038b97b46292535a6299ee97c160aca8226bd7"/>
+		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервис2Описание.Module" id="f476ceae-be3c-4bd5-9e99-ae8083decdaa.0" configVersion="471595384bbd467436819919f40a92c233c0a6d7"/>
+		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервис3Описание" id="711b80c3-5517-4b03-959d-b05fe19ec5dc" configVersion="f4dca95ab389edc0d2c1e58b97300ded7f40069d"/>
+		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервис3Описание.Module" id="711b80c3-5517-4b03-959d-b05fe19ec5dc.0" configVersion="e863474d0a9eeba7b3595152b0edb3697001748f"/>
 		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервисОписание" id="30ae2968-02fa-40f6-84bb-248ae251058f" configVersion="66dcf2d13e19c722c118f88595e2bf3f2e3c4561"/>
-		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервисОписание.Module" id="30ae2968-02fa-40f6-84bb-248ae251058f.0" configVersion="3648a732f5becbc5eb2f8fae549384f8e6ba6781"/>
+		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервисОписание.Module" id="30ae2968-02fa-40f6-84bb-248ae251058f.0" configVersion="06b1a8ae982f7372d4a11932d2ae69553d2812df"/>
 		<Metadata name="CommonModule.ПередачаДанныхОписание" id="ce90835d-dc20-4c6c-a56e-579abff9e8d3" configVersion="9c50a864007d717bc7e913993c399fa932e83690"/>
-		<Metadata name="CommonModule.ПередачаДанныхОписание.Module" id="ce90835d-dc20-4c6c-a56e-579abff9e8d3.0" configVersion="b5b9da846132a5d9eddd9dcf630d94741c7b5405"/>
-		<Metadata name="Configuration.SwaggerTest" id="1d858fa3-7832-4213-913d-abe84f0a627e" configVersion="15e2a5904aa67fdf9dbab9144181f9f9914ac0c2"/>
+		<Metadata name="CommonModule.ПередачаДанныхОписание.Module" id="ce90835d-dc20-4c6c-a56e-579abff9e8d3.0" configVersion="00f929ec930dfbb58fd5e9c67d92a963b55c5286"/>
+		<Metadata name="Configuration.SwaggerTest" id="1d858fa3-7832-4213-913d-abe84f0a627e" configVersion="06bbd85e673530f199df4ecf5d173b505678d5ba"/>
 		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис" id="af6ba78c-43cb-492b-89c8-07f08a3f1007" configVersion="1d899dd7eacc9bd10aff3a4a380a8d5e453c9730">
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.ОшибкаНетНужногоКодаОтвета" id="029527c4-994b-47c7-8ad2-24ed5d21dacf"/>
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.ОшибкаНетНужногоКодаОтвета.Method.GET" id="0fa47116-f36d-4daa-a5d4-ae6cb7eb4645"/>
@@ -25,12 +27,28 @@
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.ОшибкаНекорректныйТипMIME" id="f3b8d253-296f-4899-bc3e-e09cec76ae43"/>
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.Тестовый.Method.GET" id="f465198e-8a7b-4658-8258-ea8efac62635"/>
 		</Metadata>
-		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.Module" id="af6ba78c-43cb-492b-89c8-07f08a3f1007.0" configVersion="9028f01743b387e4fdadff5114577389700f462b"/>
+		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.Module" id="af6ba78c-43cb-492b-89c8-07f08a3f1007.0" configVersion="fb6064809b57607db789cff77a9cdc04058a6245"/>
 		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис2" id="9a18630d-a529-45d2-9a0a-a3f6cd458581" configVersion="2cc49eafbb5ffe54ebdc7d126287a353290adad5">
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис2.URLTemplate.Тестовый.Method.GET" id="01be8c97-d6bd-4d26-a428-23aebdbb6245"/>
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис2.URLTemplate.Тестовый" id="ffc5b51d-9bd2-4860-9200-619ef43a6f5e"/>
 		</Metadata>
-		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис2.Module" id="9a18630d-a529-45d2-9a0a-a3f6cd458581.0" configVersion="1259a80efdff31f1ceb0be5631f7a1dde2f1d12a"/>
-		<Metadata name="Language.Русский" id="a8410714-887d-4e2f-8f52-29f36b1ad6cd" configVersion="53b91a9725dc842562f67ceb7f002bb3924b572f"/>
+		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис2.Module" id="9a18630d-a529-45d2-9a0a-a3f6cd458581.0" configVersion="7d33ed34ffc06621351b135608416956729fb921"/>
+		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис3" id="176db70a-8de1-4055-bcfa-239b27397822" configVersion="5fbea9d0813500a7b6062c2bba0bf5d38f3e62a8">
+			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис3.URLTemplate.ОшибкаНекорректныйТипMIME" id="0418c07d-6847-4d9d-92e8-076de1cf7304"/>
+			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис3.URLTemplate.ОшибкаНекорректныйТипMIME.Method.GET" id="0bd6ad9f-fc33-48bc-8ce4-0e08bd343fda"/>
+			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис3.URLTemplate.ОшибкаНеЗаданТипMIME.Method.GET" id="2393b354-96f7-4ac3-a7a6-63bed029bdac"/>
+			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис3.URLTemplate.ОшибкаНетОтветов.Method.GET" id="42c736d4-cf72-454e-a4d1-549e27e11499"/>
+			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис3.URLTemplate.Тестовый.Method.POST" id="59c307c6-a50e-47eb-8fda-e8db4c7ba127"/>
+			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис3.URLTemplate.ОшибкаНетНужногоКодаОтвета.Method.GET" id="8876889e-2261-4bb4-b5b0-df882406af72"/>
+			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис3.URLTemplate.Тестовый.Method.GET" id="92fcdc47-0f95-44c0-88d6-1e842ddcab97"/>
+			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис3.URLTemplate.ОшибкаНетОписания.Method.GET" id="951548d5-5c53-4228-a1fc-94c65eced97e"/>
+			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис3.URLTemplate.ОшибкаНетОписания" id="a4e07288-2097-4f14-bfaa-c1aa4c2fe19a"/>
+			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис3.URLTemplate.Тестовый" id="c109dbef-6b11-49ab-beba-82d4449fcba4"/>
+			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис3.URLTemplate.ОшибкаНетНужногоКодаОтвета" id="cf4cbed6-4e97-46a8-9311-da7fccf794ba"/>
+			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис3.URLTemplate.ОшибкаНеЗаданТипMIME" id="e414ef1d-6a8d-48aa-b039-17931c92e17d"/>
+			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис3.URLTemplate.ОшибкаНетОтветов" id="ff62397f-22c3-4d59-afee-d304c44e4fea"/>
+		</Metadata>
+		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис3.Module" id="176db70a-8de1-4055-bcfa-239b27397822.0" configVersion="fb6064809b57607db789cff77a9cdc04058a6245"/>
+		<Metadata name="Language.Русский" id="a8410714-887d-4e2f-8f52-29f36b1ad6cd" configVersion="4a4128024496289ec2db0e8e28d8e991973cda02"/>
 	</ConfigVersions>
 </ConfigDumpInfo>

@@ -60,12 +60,14 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<CommonModule>SwagTest_YAxUnit_Тесты</CommonModule>
 			<CommonModule>SwagTest_Тестовый_HTTPСервисОписание</CommonModule>
 			<CommonModule>SwagTest_Тестовый_HTTPСервис2Описание</CommonModule>
+			<CommonModule>SwagTest_Тестовый_HTTPСервис3Описание</CommonModule>
 			<CommonModule>ПередачаДанныхОписание</CommonModule>
-			<CommonModule>SwagTest_YAxUnit_Тесты</CommonModule>
 			<HTTPService>SwagTest_Тестовый_HTTPСервис</HTTPService>
 			<HTTPService>SwagTest_Тестовый_HTTPСервис2</HTTPService>
+			<HTTPService>SwagTest_Тестовый_HTTPСервис3</HTTPService>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

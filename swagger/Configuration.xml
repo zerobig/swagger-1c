@@ -68,8 +68,11 @@
 			<CommonTemplate>Swag_favicon_32x32_png</CommonTemplate>
 			<CommonModule>Swag_Запросы</CommonModule>
 			<CommonModule>Swag_ОбработкаHTTP</CommonModule>
+			<CommonModule>Swag_Описание</CommonModule>
 			<CommonModule>Swag_ФормированиеОписаний</CommonModule>
 			<HTTPService>Swag_Сервис</HTTPService>
+			<DataProcessor>Swag_ПроцессорОписанийМетодов</DataProcessor>
+			<DataProcessor>Swag_ПроцессорОписанийОбъектов</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
