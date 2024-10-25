@@ -2,13 +2,13 @@
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.18">
 	<ConfigVersions>
 		<Metadata name="CommonModule.Swag_Запросы" id="a883aedc-d5b4-4e88-95a0-59e7c83d75bd" configVersion="ad95132bb4b01e34ae700136c4ef160e40b467f9"/>
-		<Metadata name="CommonModule.Swag_Запросы.Module" id="a883aedc-d5b4-4e88-95a0-59e7c83d75bd.0" configVersion="e65df41b1b105b2f8f1f402ecbd3b26340712b74"/>
+		<Metadata name="CommonModule.Swag_Запросы.Module" id="a883aedc-d5b4-4e88-95a0-59e7c83d75bd.0" configVersion="eaf8e503827a64de476892974c60fabb2c30d545"/>
 		<Metadata name="CommonModule.Swag_ОбработкаHTTP" id="b06295bb-5e84-4471-8ec4-7de2c6012e59" configVersion="80dd25e9747b222466fd6155e9f3a0a3b09188f2"/>
 		<Metadata name="CommonModule.Swag_ОбработкаHTTP.Module" id="b06295bb-5e84-4471-8ec4-7de2c6012e59.0" configVersion="8e6e4bc7a52c2d17bd43b13b28dddc1b6ff0fe12"/>
 		<Metadata name="CommonModule.Swag_Описание" id="debccc89-38e6-48d5-a85d-786ceb154889" configVersion="a791526d0cb81d14d8dd31a88703c8028f0cf9f1"/>
 		<Metadata name="CommonModule.Swag_Описание.Module" id="debccc89-38e6-48d5-a85d-786ceb154889.0" configVersion="4d891077797d4a7fc87dee5a5deb290d069ec012"/>
 		<Metadata name="CommonModule.Swag_ФормированиеОписаний" id="e458be48-4fab-4680-9df3-5184ab84eb0a" configVersion="180b251d4b8a084e987a93ef65d0bf1d9b82f2b4"/>
-		<Metadata name="CommonModule.Swag_ФормированиеОписаний.Module" id="e458be48-4fab-4680-9df3-5184ab84eb0a.0" configVersion="af8df90755150628e8219973cd070651898232e1"/>
+		<Metadata name="CommonModule.Swag_ФормированиеОписаний.Module" id="e458be48-4fab-4680-9df3-5184ab84eb0a.0" configVersion="0ca6e11d49d42c108f690eacf926951ec0a472a2"/>
 		<Metadata name="CommonTemplate.Swag_favicon_16x16_png" id="af2345ff-1ec2-4d67-84b3-af5e498ce117" configVersion="a8ca16ce63d390cd517f8a43f6d7d0eac6275502"/>
 		<Metadata name="CommonTemplate.Swag_favicon_16x16_png.Template" id="af2345ff-1ec2-4d67-84b3-af5e498ce117.0" configVersion="8a68591e923303c58feaafe586e912fed1d555cd"/>
 		<Metadata name="CommonTemplate.Swag_favicon_32x32_png" id="d0557e0b-634c-4bae-b001-e90cb96d3bda" configVersion="75afe9536bdc5970ab604f9e19eccce371044871"/>
@@ -23,9 +23,9 @@
 		<Metadata name="CommonTemplate.Swag_swagger_ui_standalone_preset_js.Template" id="0d01bb32-1eea-4bae-9e74-0a1d1c623e50.0" configVersion="a6abc4fb66a15a529109f8eca1f22aa220c5a065"/>
 		<Metadata name="Configuration.Swagger" id="abaf8ede-1075-4f12-9805-16339cdb0dbd" configVersion="803cfb550dd29a5e2f2af220ff2ed11189bf1952"/>
 		<Metadata name="DataProcessor.Swag_ПроцессорОписанийМетодов" id="2c05aa88-7664-4b56-aa0d-ac2d5bd7c240" configVersion="5a2350516504233bb738ff15eb40d41788467542"/>
-		<Metadata name="DataProcessor.Swag_ПроцессорОписанийМетодов.ObjectModule" id="2c05aa88-7664-4b56-aa0d-ac2d5bd7c240.0" configVersion="fe111dc86b66599ddaa84c49de9f0fcb12065a11"/>
+		<Metadata name="DataProcessor.Swag_ПроцессорОписанийМетодов.ObjectModule" id="2c05aa88-7664-4b56-aa0d-ac2d5bd7c240.0" configVersion="cf86266b85194684ef7a2eae44a9ca2ea4b3bbd2"/>
 		<Metadata name="DataProcessor.Swag_ПроцессорОписанийОбъектов" id="3d662e38-90d5-4b00-81e8-6b39ba8dcfb3" configVersion="86a42fd6b4cc567bb901d2ab7a09da9f949264e6"/>
-		<Metadata name="DataProcessor.Swag_ПроцессорОписанийОбъектов.ObjectModule" id="3d662e38-90d5-4b00-81e8-6b39ba8dcfb3.0" configVersion="08d779560b796df2228ba6ba49fe21a5137b3d01"/>
+		<Metadata name="DataProcessor.Swag_ПроцессорОписанийОбъектов.ObjectModule" id="3d662e38-90d5-4b00-81e8-6b39ba8dcfb3.0" configVersion="8f3a5ee4eca73bb9e324e7b3231d9e72d8c3167a"/>
 		<Metadata name="HTTPService.Swag_Сервис" id="cae44cbc-1a88-441c-b30c-5e95da0e3cd6" configVersion="d5ab36a6e6811bdc57ef01137266af9419b547c1">
 			<Metadata name="HTTPService.Swag_Сервис.URLTemplate.SwaggerFile" id="43b9a4d4-7f4f-418f-948f-4d7ca95042d0"/>
 			<Metadata name="HTTPService.Swag_Сервис.URLTemplate.SwaggerFile.Method.GET" id="c3cf2edb-950b-4f9d-9e0d-c7e46714e711"/>
