@@ -66,6 +66,8 @@
 			<CommonTemplate>Swag_swagger_ui_standalone_preset_js</CommonTemplate>
 			<CommonTemplate>Swag_favicon_16x16_png</CommonTemplate>
 			<CommonTemplate>Swag_favicon_32x32_png</CommonTemplate>
+			<CommonTemplate>Swag_redoc_standalone_js</CommonTemplate>
+			<CommonTemplate>Swag_redoc_index_html</CommonTemplate>
 			<CommonModule>Swag_Запросы</CommonModule>
 			<CommonModule>Swag_ОбработкаHTTP</CommonModule>
 			<CommonModule>Swag_Описание</CommonModule>
