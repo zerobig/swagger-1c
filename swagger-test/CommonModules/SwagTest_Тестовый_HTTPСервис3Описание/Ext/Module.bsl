@@ -52,7 +52,7 @@
 Функция ПолучитьОбъектыHTTPСервиса() Экспорт
 	
 	Объекты = Swag_Описание
-		.Объект("TestObject")
+		.Объект("TestObject3")
 			.Свойство("test_property_1")
 				.Описание("Это описание для тестового свойства объекта")
 				.ТипЗначения("boolean")
@@ -66,9 +66,9 @@
 				.ТипЗначения("array")
 				.Схема("AnotherTestObject")
 		//
-		.Объект("AnotherTestObject")
+		.Объект("AnotherTestObject3")
 		//
-		.Объект("TestPostObject")
+		.Объект("TestPostObject3")
 			.Свойство("test_post_property")
 				.ТипЗначения("string")
 		.Сформировать()
