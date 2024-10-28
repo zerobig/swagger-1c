@@ -2,16 +2,16 @@
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.18">
 	<ConfigVersions>
 		<Metadata name="CommonModule.SwagTest_YAxUnit_Тесты" id="25571919-32f4-4296-9a8e-99b0f3113e1a" configVersion="25c2f7f11369609a6ddda6d4acf761acc996fa65"/>
-		<Metadata name="CommonModule.SwagTest_YAxUnit_Тесты.Module" id="25571919-32f4-4296-9a8e-99b0f3113e1a.0" configVersion="252232238ce6740fe9dc0b669f674da1613b41d8"/>
+		<Metadata name="CommonModule.SwagTest_YAxUnit_Тесты.Module" id="25571919-32f4-4296-9a8e-99b0f3113e1a.0" configVersion="dcdef5f5da2aefd8af2c4ea1afd6485b8e4e6901"/>
 		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервис2Описание" id="f476ceae-be3c-4bd5-9e99-ae8083decdaa" configVersion="a8038b97b46292535a6299ee97c160aca8226bd7"/>
-		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервис2Описание.Module" id="f476ceae-be3c-4bd5-9e99-ae8083decdaa.0" configVersion="95f49b3ad64b482c6dd00bbe1a7c0ad03a91466d"/>
+		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервис2Описание.Module" id="f476ceae-be3c-4bd5-9e99-ae8083decdaa.0" configVersion="df0c3bf795ebe4d59fef0d3d1b4300e5977125c2"/>
 		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервис3Описание" id="711b80c3-5517-4b03-959d-b05fe19ec5dc" configVersion="f4dca95ab389edc0d2c1e58b97300ded7f40069d"/>
-		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервис3Описание.Module" id="711b80c3-5517-4b03-959d-b05fe19ec5dc.0" configVersion="a291fa5059781cbf7854c6105ad5e80036f391bd"/>
+		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервис3Описание.Module" id="711b80c3-5517-4b03-959d-b05fe19ec5dc.0" configVersion="8774167fb191e4ab27a10ec4cc9ee472c37b74b0"/>
 		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервисОписание" id="30ae2968-02fa-40f6-84bb-248ae251058f" configVersion="66dcf2d13e19c722c118f88595e2bf3f2e3c4561"/>
-		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервисОписание.Module" id="30ae2968-02fa-40f6-84bb-248ae251058f.0" configVersion="5a49a199ad3f2058d26653c9e634f1d98e6f6205"/>
+		<Metadata name="CommonModule.SwagTest_Тестовый_HTTPСервисОписание.Module" id="30ae2968-02fa-40f6-84bb-248ae251058f.0" configVersion="2375bed3ad43e351b7f4fc955196c8f159f45cd5"/>
 		<Metadata name="CommonModule.ПередачаДанныхОписание" id="ce90835d-dc20-4c6c-a56e-579abff9e8d3" configVersion="9c50a864007d717bc7e913993c399fa932e83690"/>
-		<Metadata name="CommonModule.ПередачаДанныхОписание.Module" id="ce90835d-dc20-4c6c-a56e-579abff9e8d3.0" configVersion="76c9aa7ef7a131347400a01bf4664be7909b2e9a"/>
-		<Metadata name="Configuration.SwaggerTest" id="1d858fa3-7832-4213-913d-abe84f0a627e" configVersion="4787a8f1e746b4d52dad91af26a08e2dc5cbee1b"/>
+		<Metadata name="CommonModule.ПередачаДанныхОписание.Module" id="ce90835d-dc20-4c6c-a56e-579abff9e8d3.0" configVersion="6d7b674056ec5abad3baa7519b068e1ff00d4939"/>
+		<Metadata name="Configuration.SwaggerTest" id="1d858fa3-7832-4213-913d-abe84f0a627e" configVersion="90d44ee1336aac8644f6c89a7ed8eefa510d7318"/>
 		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис" id="af6ba78c-43cb-492b-89c8-07f08a3f1007" configVersion="1d899dd7eacc9bd10aff3a4a380a8d5e453c9730">
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.ОшибкаНетНужногоКодаОтвета" id="029527c4-994b-47c7-8ad2-24ed5d21dacf"/>
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.ОшибкаНетНужногоКодаОтвета.Method.GET" id="0fa47116-f36d-4daa-a5d4-ae6cb7eb4645"/>
@@ -27,12 +27,12 @@
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.ОшибкаНекорректныйТипMIME" id="f3b8d253-296f-4899-bc3e-e09cec76ae43"/>
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.URLTemplate.Тестовый.Method.GET" id="f465198e-8a7b-4658-8258-ea8efac62635"/>
 		</Metadata>
-		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.Module" id="af6ba78c-43cb-492b-89c8-07f08a3f1007.0" configVersion="f064d25a8efa79976a9731b5a1cde1ed0529f50e"/>
+		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис.Module" id="af6ba78c-43cb-492b-89c8-07f08a3f1007.0" configVersion="193337e9256971fa9fb93505ff43a6bec34bae7e"/>
 		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис2" id="9a18630d-a529-45d2-9a0a-a3f6cd458581" configVersion="2cc49eafbb5ffe54ebdc7d126287a353290adad5">
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис2.URLTemplate.Тестовый.Method.GET" id="01be8c97-d6bd-4d26-a428-23aebdbb6245"/>
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис2.URLTemplate.Тестовый" id="ffc5b51d-9bd2-4860-9200-619ef43a6f5e"/>
 		</Metadata>
-		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис2.Module" id="9a18630d-a529-45d2-9a0a-a3f6cd458581.0" configVersion="19ea24809dd05928945edd016004c2860fb545fd"/>
+		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис2.Module" id="9a18630d-a529-45d2-9a0a-a3f6cd458581.0" configVersion="c1cabfd6f8325d93351fecadaeb0346b6edafae1"/>
 		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис3" id="176db70a-8de1-4055-bcfa-239b27397822" configVersion="7ebc5d81c4640dd66a68c0b567a2dd262e31693e">
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис3.URLTemplate.ОшибкаНекорректныйТипMIME" id="0418c07d-6847-4d9d-92e8-076de1cf7304"/>
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис3.URLTemplate.ОшибкаНекорректныйТипMIME.Method.GET" id="0bd6ad9f-fc33-48bc-8ce4-0e08bd343fda"/>
@@ -48,7 +48,7 @@
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис3.URLTemplate.ОшибкаНеЗаданТипMIME" id="e414ef1d-6a8d-48aa-b039-17931c92e17d"/>
 			<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис3.URLTemplate.ОшибкаНетОтветов" id="ff62397f-22c3-4d59-afee-d304c44e4fea"/>
 		</Metadata>
-		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис3.Module" id="176db70a-8de1-4055-bcfa-239b27397822.0" configVersion="f064d25a8efa79976a9731b5a1cde1ed0529f50e"/>
+		<Metadata name="HTTPService.SwagTest_Тестовый_HTTPСервис3.Module" id="176db70a-8de1-4055-bcfa-239b27397822.0" configVersion="193337e9256971fa9fb93505ff43a6bec34bae7e"/>
 		<Metadata name="Language.Русский" id="a8410714-887d-4e2f-8f52-29f36b1ad6cd" configVersion="4a4128024496289ec2db0e8e28d8e991973cda02"/>
 	</ConfigVersions>
 </ConfigDumpInfo>
