@@ -5,6 +5,33 @@
 Данный продукт предназначен для организации процесса документирования HTTP сервисов конфигураций написанных на платформе 1С:Предприятие.
 ![image](https://github.com/zerobig/swagger-1c/blob/master/doc/images/screenshot_1.png)
 
+Кроме swagger-ui для визуализации API могут использоваться следующие решения:
+
+<details>
+  <summary>ReDoc</summary>
+  <img src="./doc/images/redoc.png">
+</details>
+
+<details>
+  <summary>Scalar</summary>
+  <img src="./doc/images/scalar.png">
+</details>
+
+<details>
+  <summary>Stoplight</summary>
+  <img src="./doc/images/stoplight.png">
+</details>
+
+<details>
+  <summary>RapiDoc</summary>
+  <img src="./doc/images/rapidoc.png">
+</details>
+
+Для того чтобы переключиться на желаемую библиотеку в строке запроса надо добавить параметр:
+```
+/swagger/index.html?ui=scalar
+```
+
 ## Состав репозитория
 
 + swagger - расширение конфигурации реализующее функциональность создания документации
