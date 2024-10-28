@@ -60,14 +60,21 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
-			<CommonTemplate>Swag_index_html</CommonTemplate>
-			<CommonTemplate>Swag_swagger_ui_css</CommonTemplate>
-			<CommonTemplate>Swag_swagger_ui_bundle_js</CommonTemplate>
-			<CommonTemplate>Swag_swagger_ui_standalone_preset_js</CommonTemplate>
 			<CommonTemplate>Swag_favicon_16x16_png</CommonTemplate>
 			<CommonTemplate>Swag_favicon_32x32_png</CommonTemplate>
-			<CommonTemplate>Swag_redoc_standalone_js</CommonTemplate>
+			<CommonTemplate>Swag_index_html</CommonTemplate>
+			<CommonTemplate>Swag_rapidoc_index_html</CommonTemplate>
+			<CommonTemplate>Swag_rapidoc_min_js</CommonTemplate>
 			<CommonTemplate>Swag_redoc_index_html</CommonTemplate>
+			<CommonTemplate>Swag_redoc_standalone_js</CommonTemplate>
+			<CommonTemplate>Swag_scalar_api_reference_js</CommonTemplate>
+			<CommonTemplate>Swag_scalar_index_html</CommonTemplate>
+			<CommonTemplate>Swag_stoplight_elements_styles_min_css</CommonTemplate>
+			<CommonTemplate>Swag_stoplight_elements_web_components_min_js</CommonTemplate>
+			<CommonTemplate>Swag_stoplight_index_html</CommonTemplate>
+			<CommonTemplate>Swag_swagger_ui_bundle_js</CommonTemplate>
+			<CommonTemplate>Swag_swagger_ui_css</CommonTemplate>
+			<CommonTemplate>Swag_swagger_ui_standalone_preset_js</CommonTemplate>
 			<CommonModule>Swag_Запросы</CommonModule>
 			<CommonModule>Swag_ОбработкаHTTP</CommonModule>
 			<CommonModule>Swag_Описание</CommonModule>
