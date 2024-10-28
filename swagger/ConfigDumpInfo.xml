@@ -2,7 +2,7 @@
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.18">
 	<ConfigVersions>
 		<Metadata name="CommonModule.Swag_Запросы" id="a883aedc-d5b4-4e88-95a0-59e7c83d75bd" configVersion="ad95132bb4b01e34ae700136c4ef160e40b467f9"/>
-		<Metadata name="CommonModule.Swag_Запросы.Module" id="a883aedc-d5b4-4e88-95a0-59e7c83d75bd.0" configVersion="1a0e3400e41540965dc60db542d40bbe48024993"/>
+		<Metadata name="CommonModule.Swag_Запросы.Module" id="a883aedc-d5b4-4e88-95a0-59e7c83d75bd.0" configVersion="08f236fe4e8d572580a4de266f7674ec8f8b5506"/>
 		<Metadata name="CommonModule.Swag_ОбработкаHTTP" id="b06295bb-5e84-4471-8ec4-7de2c6012e59" configVersion="80dd25e9747b222466fd6155e9f3a0a3b09188f2"/>
 		<Metadata name="CommonModule.Swag_ОбработкаHTTP.Module" id="b06295bb-5e84-4471-8ec4-7de2c6012e59.0" configVersion="a103cb998169ec2d0e808bb348972915540582ab"/>
 		<Metadata name="CommonModule.Swag_Описание" id="debccc89-38e6-48d5-a85d-786ceb154889" configVersion="a791526d0cb81d14d8dd31a88703c8028f0cf9f1"/>
