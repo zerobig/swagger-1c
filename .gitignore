@@ -1,4 +1,8 @@
 *.log
+*/ConfigDumpInfo.xml
+
+build/
+build
 
 # compiled output
 dist
