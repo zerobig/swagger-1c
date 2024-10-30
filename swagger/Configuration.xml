@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
-	<Configuration uuid="abaf8ede-1075-4f12-9805-16339cdb0dbd">
+	<Configuration uuid="ae9063ec-aee8-4e76-a69a-591c728fff00">
 		<InternalInfo>
 			<xr:ContainedObject>
 				<xr:ClassId>9cd510cd-abfc-11d4-9434-004095e12fc7</xr:ClassId>
-				<xr:ObjectId>dbd20648-593e-423f-bc54-17842efab026</xr:ObjectId>
+				<xr:ObjectId>b40d6cec-b8e4-422c-9bd4-fc0a7ce17b91</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>9fcd25a0-4822-11d4-9414-008048da11f9</xr:ClassId>
-				<xr:ObjectId>22d1cf05-5832-4499-821e-2e2fc3273c5d</xr:ObjectId>
+				<xr:ObjectId>46a29df4-e5a6-4dc4-8395-27d754a16cca</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>e3687481-0a87-462c-a166-9f34594f9bba</xr:ClassId>
-				<xr:ObjectId>1e307903-b758-4379-8e16-77bd64a071c4</xr:ObjectId>
+				<xr:ObjectId>e25397a5-1013-4d4b-9c84-aa6238973246</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>9de14907-ec23-4a07-96f0-85521cb6b53b</xr:ClassId>
-				<xr:ObjectId>b0635b92-fd55-49e8-8b7b-a08667ccca99</xr:ObjectId>
+				<xr:ObjectId>25f8dfd3-7ef2-4972-b701-5ce5522d179b</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>51f2d5d8-ea4d-4064-8892-82951750031e</xr:ClassId>
-				<xr:ObjectId>827b49f0-9b1c-4c6b-9925-43c905676c65</xr:ObjectId>
+				<xr:ObjectId>46d34b08-e437-45e9-a175-9d3d8fa61034</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>e68182ea-4237-4383-967f-90c1e3370bc7</xr:ClassId>
-				<xr:ObjectId>002e89a9-dc9b-46c9-b596-a14803d5048a</xr:ObjectId>
+				<xr:ObjectId>dfb07a2e-b276-4f10-b327-2194c8174451</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>fb282519-d103-4dd3-bc12-cb271d631dfc</xr:ClassId>
-				<xr:ObjectId>3281ddaf-6682-4370-99d5-a52d8328ef77</xr:ObjectId>
+				<xr:ObjectId>de8f7c03-7779-4b8e-b08c-8597d7c3179f</xr:ObjectId>
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
@@ -60,6 +60,7 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Role>Swag_ОсновнаяРоль</Role>
 			<CommonTemplate>Swag_favicon_16x16_png</CommonTemplate>
 			<CommonTemplate>Swag_favicon_32x32_png</CommonTemplate>
 			<CommonTemplate>Swag_index_html</CommonTemplate>
