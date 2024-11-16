@@ -73,6 +73,9 @@
 				.ТипЗначения("string")
 				.ЗначениеПеречисления("asc")
 				.ЗначениеПеречисления("desc")
+			.Свойство("test_property_6")
+				.ТипЗначения("object")
+				.Схема("AnotherTestObject")
 		//
 		.Объект("AnotherTestObject3")
 		//

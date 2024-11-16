@@ -49,6 +49,7 @@
 	TestObjectМассивСвойств.Добавить(Swag_ФормированиеОписаний.ОписаниеСвойстваОбъекта("test_property_2", , "string", , , , "ООО ""УУУ"""));
 	TestObjectМассивСвойств.Добавить(Swag_ФормированиеОписаний.ОписаниеСвойстваОбъекта("test_property_3", , "integer", , , , 123.45));
 	TestObjectМассивСвойств.Добавить(Swag_ФормированиеОписаний.ОписаниеСвойстваОбъекта("test_property_4", , "array", , , "AnotherTestObject"));
+	TestObjectМассивСвойств.Добавить(Swag_ФормированиеОписаний.ОписаниеСвойстваОбъекта("test_property_5", , "object", , , "AnotherTestObject"));
 	
 	TestPostObjectМассивСвойств = Новый Массив;
 	TestPostObjectМассивСвойств.Добавить(Swag_ФормированиеОписаний.ОписаниеСвойстваОбъекта("test_post_property", , "string"));
