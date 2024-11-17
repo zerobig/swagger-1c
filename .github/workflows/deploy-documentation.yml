@@ -19,6 +19,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Извлечение исходников
+        uses: actions/checkout@v4
+
       - name: Установка NodeJS
         uses: actions/setup-node@v4
         with:
