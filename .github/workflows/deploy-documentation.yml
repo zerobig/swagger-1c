@@ -3,7 +3,7 @@ name: Сборка документации
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - 'docs/**'
     # Review gh actions docs if you want to further define triggers, paths, etc
