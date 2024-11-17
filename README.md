@@ -3,28 +3,28 @@
 [![OpenYellow](https://img.shields.io/endpoint?url=https://openyellow.org/data/badges/2/304872931.json)](https://openyellow.org/grid?data=top&repo=304872931)
 
 Данный продукт предназначен для организации процесса документирования HTTP сервисов конфигураций написанных на платформе 1С:Предприятие.
-![image](https://github.com/zerobig/swagger-1c/blob/master/docs/static/img/screenshot_1.png)
+![image](https://github.com/zerobig/swagger-1c/blob/master/docs/static/screenshot_1.png)
 
 Кроме swagger-ui для визуализации API могут использоваться следующие решения:
 
 <details>
   <summary>ReDoc</summary>
-  <img src="./docs/static/img/redoc.png">
+  <img src="./docs/static/redoc.png">
 </details>
 
 <details>
   <summary>Scalar</summary>
-  <img src="./docs/static/img/scalar.png">
+  <img src="./docs/static/scalar.png">
 </details>
 
 <details>
   <summary>Stoplight</summary>
-  <img src="./docs/static/img/stoplight.png">
+  <img src="./docs/static/stoplight.png">
 </details>
 
 <details>
   <summary>RapiDoc</summary>
-  <img src="./docs/static/img/rapidoc.png">
+  <img src="./docs/static/rapidoc.png">
 </details>
 
 Для того чтобы переключиться на желаемую библиотеку в строке запроса надо добавить параметр:
