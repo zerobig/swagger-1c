@@ -6,7 +6,7 @@ slug: /
 # Swagger для 1С:Предприятия 8
 
 Данный продукт предназначен для организации процесса документирования HTTP сервисов конфигураций написанных на платформе 1С:Предприятие.
-![image](https://github.com/zerobig/swagger-1c/blob/master/docs/static/screenshot_1.png)
+![image](../../static/screenshot_1.png)
 
 Кроме swagger-ui для визуализации API могут использоваться следующие решения:
 
