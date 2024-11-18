@@ -55,7 +55,7 @@ const config: Config = {
       title: 'Swagger для 1С:Предприятия 8',
       logo: {
         alt: 'Логотип',
-        src: 'img/logo.svg',
+        src: 'img/logo.webp',
       },
       items: [
         {
