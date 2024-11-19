@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdoc=self.webpackChunkdoc||[]).push([[918],{3417:s=>{s.exports=JSON.parse('{"tags":[{"label":"\u041d\u0430\u0447\u0430\u043b\u043e","permalink":"/swagger-1c/docs/tags/\u043d\u0430\u0447\u0430\u043b\u043e","count":5}]}')}}]);
