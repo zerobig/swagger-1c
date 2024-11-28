@@ -51,7 +51,7 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor/>
-			<Version>1.2.3</Version>
+			<Version>1.2.4</Version>
 			<BriefInformation/>
 			<DetailedInformation/>
 			<Copyright/>
@@ -66,6 +66,8 @@
 			<CommonModule>SwagTest_Тестовый_HTTPСервис3Описание</CommonModule>
 			<CommonModule>ПередачаДанныхОписание</CommonModule>
 			<CommonModule>SwagTest_Тестовый_HTTPСервисСВерсияиОписание</CommonModule>
+			<CommonModule>БиллингОписание</CommonModule>
+			<CommonModule>СерверЛояльностиОписание</CommonModule>
 			<HTTPService>SwagTest_Тестовый_HTTPСервис</HTTPService>
 			<HTTPService>SwagTest_Тестовый_HTTPСервис2</HTTPService>
 			<HTTPService>SwagTest_Тестовый_HTTPСервис3</HTTPService>
