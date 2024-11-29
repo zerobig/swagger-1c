@@ -1,6 +1,6 @@
 {
   "name": "swagger-1c",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "scripts": {
     "build": "npm run build:extension && npm run build:test",
     "build:extension": "cd scripts && ext2cfe.cmd ../swagger ../dist/swagger.cfe Swagger",
