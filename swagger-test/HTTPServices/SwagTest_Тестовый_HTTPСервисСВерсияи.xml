@@ -9,7 +9,7 @@
 					<v8:content>Swag test тестовый HTTPСервис с версияи</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>Тестовый HTTPСервис с версияи из комментария</Comment>
+			<Comment>Тестовый HTTPСервис с версияи. Описание взято из комментария</Comment>
 			<RootURL>swagger_test_with_versions</RootURL>
 			<ReuseSessions>AutoUse</ReuseSessions>
 			<SessionMaxAge>20</SessionMaxAge>
