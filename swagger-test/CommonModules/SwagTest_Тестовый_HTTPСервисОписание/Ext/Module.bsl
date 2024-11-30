@@ -70,7 +70,7 @@
 	TestPostObjectМассивСвойств.Добавить(Swag_ФормированиеОписаний.ОписаниеРеквизитаОбъекта("test_post_property", "string"));
 	
 	Объекты = Новый Массив;
-	Объекты.Добавить(Swag_ФормированиеОписаний.ОписаниеОбъекта("TestObject", "object", TestObjectМассивСвойств));
+	Объекты.Добавить(Swag_ФормированиеОписаний.ОписаниеОбъекта("TestObject", "object", TestObjectМассивСвойств, "test_property_1, test_property_2"));
 	Объекты.Добавить(Swag_ФормированиеОписаний.ОписаниеОбъекта("AnotherTestObject", "object"));
 	Объекты.Добавить(Swag_ФормированиеОписаний.ОписаниеОбъекта("TestPostObject", "object", TestPostObjectМассивСвойств));
 	
