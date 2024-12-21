@@ -51,7 +51,7 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor/>
-			<Version>1.2.7</Version>
+			<Version>1.2.5</Version>
 			<BriefInformation/>
 			<DetailedInformation/>
 			<Copyright/>
@@ -60,7 +60,9 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Subsystem>Swagger</Subsystem>
 			<Role>Swag_ОсновнаяРоль</Role>
+			<Role>ПолныеПрава</Role>
 			<CommonTemplate>Swag_favicon_16x16_png</CommonTemplate>
 			<CommonTemplate>Swag_favicon_32x32_png</CommonTemplate>
 			<CommonTemplate>Swag_index_html</CommonTemplate>
@@ -80,9 +82,14 @@
 			<CommonModule>Swag_ОбработкаHTTP</CommonModule>
 			<CommonModule>Swag_Описание</CommonModule>
 			<CommonModule>Swag_ФормированиеОписаний</CommonModule>
+			<CommonModule>Swag_НастройкиSwaggerПереопределяемый</CommonModule>
+			<CommonModule>Swag_ОбщиеОписанияПереопределяемый</CommonModule>
+			<CommonModule>БиллингОписание</CommonModule>
 			<HTTPService>Swag_Сервис</HTTPService>
 			<DataProcessor>Swag_ПроцессорОписанийМетодов</DataProcessor>
 			<DataProcessor>Swag_ПроцессорОписанийОбъектов</DataProcessor>
+			<DataProcessor>Swag_ПолучитьТекстДляSwagger</DataProcessor>
+			<DataProcessor>Swag_СозданиеПользователяSwagger</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
