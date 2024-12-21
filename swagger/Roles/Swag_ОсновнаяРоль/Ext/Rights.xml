@@ -4,31 +4,29 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>true</independentRightsOfChildObjects>
 	<object>
-		<name>DataProcessor.Swag_ПроцессорОписанийМетодов</name>
+		<name>Configuration.Swagger</name>
 		<right>
-			<name>Use</name>
+			<name>MainWindowModeNormal</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.Swag_ПроцессорОписанийОбъектов</name>
-		<right>
-			<name>Use</name>
+			<name>MainWindowModeWorkplace</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>View</name>
+			<name>MainWindowModeEmbeddedWorkplace</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>HTTPService.Swag_Сервис.URLTemplate.SwaggerFile.Method.GET</name>
 		<right>
-			<name>Use</name>
+			<name>MainWindowModeFullscreenWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeKiosk</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>AnalyticsSystemClient</name>
 			<value>true</value>
 		</right>
 	</object>
