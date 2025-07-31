@@ -203,6 +203,49 @@
 					</Method>
 				</ChildObjects>
 			</URLTemplate>
+			<URLTemplate uuid="9cbf4d05-1a71-4309-86b8-3c800288336f">
+				<Properties>
+					<Name>КомбинированнаяСхема</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комбинированная схема</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/combine_schema</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="bd70d582-7c74-4d90-b69c-6e5650cea372">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>КомбинированнаяСхемаGET</Handler>
+						</Properties>
+					</Method>
+					<Method uuid="63cfada2-2d43-48a7-bcb7-37c7ecc6e12c">
+						<Properties>
+							<Name>POST</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>POST</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>КомбинированнаяСхемаPOST</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
 		</ChildObjects>
 	</HTTPService>
 </MetaDataObject>

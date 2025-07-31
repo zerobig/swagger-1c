@@ -25,7 +25,7 @@
 						</v8:item>
 					</Synonym>
 					<Comment/>
-					<Template>/*</Template>
+					<Template>/test</Template>
 				</Properties>
 				<ChildObjects>
 					<Method uuid="01be8c97-d6bd-4d26-a428-23aebdbb6245">
@@ -40,6 +40,35 @@
 							<Comment/>
 							<HTTPMethod>GET</HTTPMethod>
 							<Handler>ТестовыйGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="caf675e7-498c-4693-95e7-bb0ff7956a33">
+				<Properties>
+					<Name>КомбинированнаяСхема</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комбинированная схема</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/combine_schema</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="ba7f3435-885c-48fd-a2b7-43212042bcc2">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>КомбинированнаяСхемаGET</Handler>
 						</Properties>
 					</Method>
 				</ChildObjects>
