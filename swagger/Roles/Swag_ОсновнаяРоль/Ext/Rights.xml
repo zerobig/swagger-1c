@@ -3,33 +3,4 @@
 	<setForNewObjects>true</setForNewObjects>
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>true</independentRightsOfChildObjects>
-	<object>
-		<name>DataProcessor.Swag_ПроцессорОписанийМетодов</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.Swag_ПроцессорОписанийОбъектов</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>HTTPService.Swag_Сервис.URLTemplate.SwaggerFile.Method.GET</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
-	</object>
 </Rights>
