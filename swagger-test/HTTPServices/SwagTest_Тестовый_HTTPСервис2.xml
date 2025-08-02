@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<HTTPService uuid="9a18630d-a529-45d2-9a0a-a3f6cd458581">
+		<Properties>
+			<Name>SwagTest_Тестовый_HTTPСервис2</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang/>
+					<v8:content>Swag test тестовый HTTPСервис2</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<RootURL>swagger_test2</RootURL>
+			<ReuseSessions>AutoUse</ReuseSessions>
+			<SessionMaxAge>20</SessionMaxAge>
+		</Properties>
+		<ChildObjects>
+			<URLTemplate uuid="ffc5b51d-9bd2-4860-9200-619ef43a6f5e">
+				<Properties>
+					<Name>Тестовый</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang/>
+							<v8:content>Тестовый</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/test</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="01be8c97-d6bd-4d26-a428-23aebdbb6245">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang/>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>ТестовыйGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="caf675e7-498c-4693-95e7-bb0ff7956a33">
+				<Properties>
+					<Name>КомбинированнаяСхема</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комбинированная схема</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/combine_schema</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="ba7f3435-885c-48fd-a2b7-43212042bcc2">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>КомбинированнаяСхемаGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+		</ChildObjects>
+	</HTTPService>
+</MetaDataObject>

@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<HTTPService uuid="af6ba78c-43cb-492b-89c8-07f08a3f1007">
+		<Properties>
+			<Name>SwagTest_Тестовый_HTTPСервис</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тестовый HTTP сервис</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<RootURL>swagger_test</RootURL>
+			<ReuseSessions>AutoUse</ReuseSessions>
+			<SessionMaxAge>20</SessionMaxAge>
+		</Properties>
+		<ChildObjects>
+			<URLTemplate uuid="41774295-8210-4735-aeb9-ffb4f4487cc6">
+				<Properties>
+					<Name>Тестовый</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тестовый</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/first</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="f465198e-8a7b-4658-8258-ea8efac62635">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>ТестовыйGET</Handler>
+						</Properties>
+					</Method>
+					<Method uuid="aed26462-177c-4451-8463-22fd47f340dc">
+						<Properties>
+							<Name>POST</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>POST</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>ТестовыйPOST</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="ec3fc645-f449-4d60-be08-70a391c2d386">
+				<Properties>
+					<Name>ОшибкаНетОписания</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибка нет описания</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/error_no_description</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="708c3f5c-44cc-4eb4-86f0-4aba71dca9b0">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>ОшибкаНетОписанияGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="b7c5a9ce-861e-40e6-9bdc-ff589b785d3b">
+				<Properties>
+					<Name>ОшибкаНетОтветов</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибка нет ответов</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/error_no_responses</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="bb6d19cd-9b5d-4e22-aa31-fc3a95e6c14b">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>ОшибкаНетОтветовGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="029527c4-994b-47c7-8ad2-24ed5d21dacf">
+				<Properties>
+					<Name>ОшибкаНетНужногоКодаОтвета</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибка нет нужного кода ответа</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/error_no_response_code_200</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="0fa47116-f36d-4daa-a5d4-ae6cb7eb4645">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>ОшибкаНетНужногоКодаОтветаGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="b119b99e-bf5d-4fd5-8c3b-4cdd757f6d97">
+				<Properties>
+					<Name>ОшибкаНеЗаданТипMIME</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибка не задан тип MIME</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/error_not_set_mime_type</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="59479e28-fe9c-45d8-b454-4754e59b0a8f">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>ОшибкаНеЗаданТипMIMEGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="f3b8d253-296f-4899-bc3e-e09cec76ae43">
+				<Properties>
+					<Name>ОшибкаНекорректныйТипMIME</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибка некорректный тип MIME</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/error_incorrect_mime_type</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="d3525e15-e781-4f10-b38b-cad05104e1ad">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>ОшибкаНекорректныйТипMIMEGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+		</ChildObjects>
+	</HTTPService>
+</MetaDataObject>
