@@ -51,7 +51,7 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor/>
-			<Version>1.2.7</Version>
+			<Version>1.3.0</Version>
 			<BriefInformation/>
 			<DetailedInformation/>
 			<Copyright/>
@@ -76,11 +76,15 @@
 			<CommonTemplate>Swag_swagger_ui_bundle_js</CommonTemplate>
 			<CommonTemplate>Swag_swagger_ui_css</CommonTemplate>
 			<CommonTemplate>Swag_swagger_ui_standalone_preset_js</CommonTemplate>
+			<CommonTemplate>Swag_playground_rpc_index_html</CommonTemplate>
+			<CommonTemplate>Swag_playground_rpc_js</CommonTemplate>
+			<CommonTemplate>Swag_playground_rpc_css</CommonTemplate>
 			<CommonModule>Swag_Запросы</CommonModule>
 			<CommonModule>Swag_ОбработкаHTTP</CommonModule>
 			<CommonModule>Swag_Описание</CommonModule>
 			<CommonModule>Swag_ФормированиеОписаний</CommonModule>
 			<HTTPService>Swag_Сервис</HTTPService>
+			<HTTPService>Swag_JsonRpc</HTTPService>
 			<DataProcessor>Swag_ПроцессорОписанийМетодов</DataProcessor>
 			<DataProcessor>Swag_ПроцессорОписанийОбъектов</DataProcessor>
 		</ChildObjects>
