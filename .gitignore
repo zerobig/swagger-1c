@@ -1,8 +1,27 @@
-*.log
+# Служебные файлы 1С
+*.cf
+*.cfu
+*.cfe
+*.epf
+*.erf
+*.dt
+*.cd
+*.mdo
 */ConfigDumpInfo.xml
 
-build/
-build
+# Кэш конфигуратора
+*.cfl
+*.cflx
 
-# compiled output
-dist
+# Временные файлы
+~*
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Каталоги сборки
+/build/
+/dist/
+/out/

@@ -1,0 +1,18 @@
+# Текстовые файлы 1С используют UTF-8 с BOM.
+# Нормализуем переводы строк в LF для всех текстовых файлов.
+*.bsl  text eol=lf
+*.os   text eol=lf
+*.md   text eol=lf
+*.txt  text eol=lf
+*.json text eol=lf
+
+# Бинарные файлы не трогаем
+*.cf   binary
+*.cfu  binary
+*.cfe  binary
+*.epf  binary
+*.erf  binary
+*.dt   binary
+*.png  binary
+*.jpg  binary
+*.ico  binary
