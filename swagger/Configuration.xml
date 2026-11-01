@@ -54,7 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.Swag_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor/>
-			<Version>2.0.0</Version>
+			<Version>2.1.0</Version>
 			<Caption/>
 			<ShortCaption/>
 			<BriefInformation/>
@@ -81,9 +81,7 @@
 			<CommonTemplate>Swag_swagger_ui_bundle_js</CommonTemplate>
 			<CommonTemplate>Swag_swagger_ui_css</CommonTemplate>
 			<CommonTemplate>Swag_swagger_ui_standalone_preset_js</CommonTemplate>
-			<CommonTemplate>Swag_playground_rpc_index_html</CommonTemplate>
-			<CommonTemplate>Swag_playground_rpc_js</CommonTemplate>
-			<CommonTemplate>Swag_playground_rpc_css</CommonTemplate>
+			<CommonTemplate>Swag_openrpc_playground_index_html</CommonTemplate>
 			<CommonModule>Swag_Запросы</CommonModule>
 			<CommonModule>Swag_ОбработкаHTTP</CommonModule>
 			<CommonModule>Swag_Описание</CommonModule>
@@ -101,10 +99,14 @@
 			<CommonModule>Swag_ZodАдаптерТесты</CommonModule>
 			<CommonModule>Demo_ProductsОписание</CommonModule>
 			<CommonModule>SwaggerОбщиеНастройки</CommonModule>
+			<CommonModule>Demo_RPCОписание</CommonModule>
+			<CommonModule>Swag_JSONRPCАдаптерТесты</CommonModule>
+			<CommonModule>Swag_JSONRPCSборщикТесты</CommonModule>
 			<HTTPService>Swag_JsonRpc</HTTPService>
 			<HTTPService>Swag_Сервис</HTTPService>
 			<HTTPService>Swag_Утилиты</HTTPService>
 			<HTTPService>Demo_Products</HTTPService>
+			<HTTPService>Demo_RPC</HTTPService>
 			<DataProcessor>Swag_ПроцессорОписанийМетодов</DataProcessor>
 			<DataProcessor>Swag_ПроцессорОписанийОбъектов</DataProcessor>
 			<DataProcessor>Swag_Схема</DataProcessor>

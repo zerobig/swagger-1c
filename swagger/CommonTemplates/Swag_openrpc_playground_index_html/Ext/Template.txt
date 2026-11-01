@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenRPC Viewer</title>
+  <script type="module" crossorigin>(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const o of document.querySelectorAll('link[rel="modulepreload"]'))n(o);new MutationObserver(o=>{for(const a of o)if(a.type==="childList")for(const d of a.addedNodes)d.tagName==="LINK"&&d.rel==="modulepreload"&&n(d)}).observe(document,{childList:!0,subtree:!0});function r(o){const a={};return o.integrity&&(a.integrity=o.integrity),o.referrerPolicy&&(a.referrerPolicy=o.referrerPolicy),o.crossOrigin==="use-credentials"?a.credentials="include":o.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function n(o){if(o.ep)return;o.ep=!0;const a=r(o);fetch(o.href,a)}})();const p={doc:null,items:[],activeId:null,drafts:new Map,servers:new Map,auths:new Map,batch:[]},ee={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"};function S(e){return e==null?"":String(e).replace(/[&<>"']/g,t=>ee[t])}class q{constructor(t){this.value=t}toString(){return this.value}}const w=e=>new q(e),u=Symbol("nothing");class z{constructor(t,r){this.strings=t,this.values=r}toString(){let t="";for(let r=0;r<this.strings.length;r++)t+=this.strings[r],r<this.values.length&&(t+=H(this.values[r]));return t}}function H(e){return e==null||e===!1||e===u||e===!0?"":typeof e=="string"?S(e):typeof e=="number"?String(e):e instanceof q?e.value:e instanceof z?e.toString():Array.isArray(e)?e.map(H).join(""):S(String(e))}function l(e,...t){return new z(e,t)}function $(e,t){e.innerHTML=t instanceof q?t.value:t.toString()}function N(e,t=2){let r;try{r=JSON.stringify(e,null,t)}catch{r=String(e)}return w(S(r))}function F(e){return w(`<code>${S(e)}</code>`)}const b=e=>{const t=document.getElementById(e);if(!t)throw new Error(`Element #${e} not found`);return t};function P(e,t=!1){const r=b("status");r.textContent=e||"",r.classList.toggle("error",t)}function te(e){const t=e.match(/^#\/components\/schemas\/(.+)$/);if(t){const r=t[1];return w(`<a href="#type:${S(r)}" data-ref="type:${S(r)}" class="ref-link"><code>${S(r)}</code></a>`)}return F(e)}function O(e){return e?e.$ref?te(e.$ref):e.type?F(e.type):w("—"):w("—")}function A(e,t){return l`
+    ${e?l`<strong>${e}</strong>`:u}
+    ${e&&t?l`<br>`:u}
+    ${t??u}
+  `}async function re(e){const t=await fetch(e,{headers:{Accept:"application/json"}});if(!t.ok)throw new Error(`HTTP ${t.status} ${t.statusText}`);const r=await t.json();if(!r||typeof r!="object")throw new Error("Некорректный JSON: ожидается объект");const n=r;if(!n.openrpc&&!n.methods&&!n.components)throw new Error("Документ не похож на OpenRPC (нет openrpc/methods/components)");return r}async function K(e,t,r){const n={"Content-Type":"application/json",Accept:"application/json"};r&&r.trim()&&(n.Authorization=r.trim());const o=performance.now();try{const a=await fetch(e,{method:"POST",headers:n,body:JSON.stringify(t)}),d=Math.round(performance.now()-o),y=await a.text();let h=y,f=null;try{const c=JSON.parse(y);if(h=JSON.stringify(c,null,2),Array.isArray(c)){const m=c.find(i=>i&&typeof i=="object"&&"error"in i&&i.error);m&&(f=m.error)}else c&&typeof c=="object"&&"error"in c&&c.error&&(f=c.error)}catch{}return{ok:a.ok,status:a.status,statusText:a.statusText,ms:d,bodyText:y,bodyPretty:h,rpcError:f,networkError:null}}catch(a){return{ok:!1,status:0,statusText:"Network error",ms:Math.round(performance.now()-o),bodyText:"",bodyPretty:"",rpcError:null,networkError:a.message}}}function se(e,t,r,n){return K(e,{jsonrpc:"2.0",id:Date.now(),method:t.name,params:r},n)}function ne(e,t,r){const n=t.map(o=>({jsonrpc:"2.0",id:o.id,method:o.methodName,params:o.params}));return K(e,n,r)}function Y(e){if(!e||typeof e!="object")return null;if(e.default!==void 0)return e.default;if(Array.isArray(e.examples)&&e.examples.length)return e.examples[0];if(Array.isArray(e.enum)&&e.enum.length)return e.enum[0];if(e.$ref)return null;switch(e.type){case"string":return"";case"number":case"integer":return 0;case"boolean":return!1;case"array":return[];case"object":{const t={};if(e.properties)for(const[r,n]of Object.entries(e.properties))t[r]=Y(n);return t}default:return null}}function G(e){const t=e.params??[],r=t.map(n=>Y(n.schema));if(e.paramStructure==="by-name"){const n={};return t.forEach((o,a)=>{o.name&&(n[o.name]=r[a])}),n}return r}function ae(e){const t=e?.servers;return Array.isArray(t)&&t.length&&t[0].url?t[0].url.replace(/\/+$/,""):null}const oe={"app.title":"OpenRPC Viewer","app.load":"Load","app.urlPlaceholder":"OpenRPC JSON URL (e.g. /openrpc.json)","app.searchPlaceholder":"Search methods and types…","app.lang":"Language","status.loading":"Loading…","status.loaded":"Loaded: {title} — methods: {methods}, types: {types}","status.error":"Load error: {message}","status.emptyUrl":"Enter a URL.","status.invalidJson":"Invalid JSON: expected an object","status.notOpenRpc":"Document doesn't look like OpenRPC (no openrpc/methods/components)","placeholder.noSpec":"Schema not loaded. Enter a URL.","placeholder.welcome.title":"Welcome","placeholder.welcome.text":"Load an OpenRPC document by URL to browse methods and try requests.","placeholder.loadedNoMethods.title":"Schema loaded","placeholder.loadedNoMethods.text":"The document has no methods.","placeholder.noItems":"No items.","placeholder.noResults":"Nothing found.","tree.group.types":"Types","method.deprecated":"deprecated","method.descDetails":"Full description","method.params.title":"Parameters","method.params.name":"Name","method.params.type":"Type","method.params.required":"Required","method.params.description":"Description","method.params.yes":"yes","method.params.no":"no","method.params.empty":"No parameters.","method.result.title":"Result","method.result.empty":"Not specified.","method.errors.title":"Possible errors","method.errors.code":"Code","method.errors.message":"Message","method.examples.title":"Examples","method.examples.label":"Example {n}","method.examples.result":"Result:","method.playground.title":"Playground","type.properties.title":"Properties","type.properties.name":"Name","type.properties.type":"Type","type.properties.description":"Description","type.items.title":"Array items","type.enum.title":"Allowed values","type.schema.show":"Show JSON schema","pg.server":"Server:","pg.noServer":"Schema has no servers[].url. Playground can't send requests.","pg.params.labelByName":"Parameters (JSON, object)","pg.params.labelByPosition":"Parameters (JSON, array)","pg.send":"Send","pg.sending":"Sending…","pg.addToBatch":"+ To batch","pg.reset":"Reset","pg.invalidJson":"⚠ Invalid JSON","pg.auth.label":"Authorization:","pg.auth.placeholder":"e.g. Basic dXNlcjpwYXNz — empty = no header","pg.response.placeholder":"Response will appear here after sending.","pg.response.empty":"Empty response.","pg.response.copy":"Copy","pg.response.copied":"Copied!","pg.error.title":"Error","pg.error.noServer":"No server URL in schema","pg.error.invalidParams":"Invalid JSON in params: {message}","pg.status.http":"HTTP {status} {statusText} · {ms} ms","pg.status.rpcError":"HTTP {status} · JSON-RPC error · {ms} ms","pg.status.networkError":"Network error · {ms} ms","pg.network.message":`Could not request {url}
+
+{error}
+
+Possible causes:
+• server unreachable
+• CORS blocks browser request
+• invalid URL`,"pg.batch.title":"Batch — {n}","pg.batch.targetServer":"target:","pg.batch.send":"Send batch","pg.batch.sending":"Sending…","pg.batch.clear":"Clear","pg.batch.remove":"Remove","pg.batch.noServer":"No server URL for batch"},le={"app.title":"OpenRPC Viewer","app.load":"Загрузить","app.urlPlaceholder":"URL к OpenRPC JSON (например, /openrpc.json)","app.searchPlaceholder":"Поиск методов и типов…","app.lang":"Язык","status.loading":"Загрузка…","status.loaded":"Загружено: {title} — методов: {methods}, типов: {types}","status.error":"Ошибка загрузки: {message}","status.emptyUrl":"Введите URL.","status.invalidJson":"Некорректный JSON: ожидается объект","status.notOpenRpc":"Документ не похож на OpenRPC (нет openrpc/methods/components)","placeholder.noSpec":"Схема не загружена. Укажите URL.","placeholder.welcome.title":"Добро пожаловать","placeholder.welcome.text":"Загрузите OpenRPC-документ по URL, чтобы просмотреть методы и попробовать запросы.","placeholder.loadedNoMethods.title":"Схема загружена","placeholder.loadedNoMethods.text":"В документе нет методов.","placeholder.noItems":"Нет элементов.","placeholder.noResults":"Ничего не найдено.","tree.group.types":"Типы","method.deprecated":"deprecated","method.descDetails":"Подробное описание","method.params.title":"Параметры","method.params.name":"Имя","method.params.type":"Тип","method.params.required":"Обяз.","method.params.description":"Описание","method.params.yes":"да","method.params.no":"нет","method.params.empty":"Нет параметров.","method.result.title":"Результат","method.result.empty":"Не указан.","method.errors.title":"Возможные ошибки","method.errors.code":"Код","method.errors.message":"Сообщение","method.examples.title":"Примеры","method.examples.label":"Пример {n}","method.examples.result":"Результат:","method.playground.title":"Playground","type.properties.title":"Свойства","type.properties.name":"Имя","type.properties.type":"Тип","type.properties.description":"Описание","type.items.title":"Элементы массива","type.enum.title":"Допустимые значения","type.schema.show":"Показать JSON-схему","pg.server":"Сервер:","pg.noServer":"В схеме нет servers[].url. Playground не сможет отправить запрос.","pg.params.labelByName":"Параметры (JSON, объект)","pg.params.labelByPosition":"Параметры (JSON, массив)","pg.send":"Отправить","pg.sending":"Отправка…","pg.addToBatch":"+ В batch","pg.reset":"Сбросить","pg.invalidJson":"⚠ JSON невалиден","pg.auth.label":"Authorization:","pg.auth.placeholder":"например, Basic dXNlcjpwYXNz — пусто = без заголовка","pg.response.placeholder":"Ответ появится здесь после отправки.","pg.response.empty":"Пустой ответ.","pg.response.copy":"Копировать","pg.response.copied":"Скопировано!","pg.error.title":"Ошибка","pg.error.noServer":"Нет URL сервера в схеме","pg.error.invalidParams":"Невалидный JSON в параметрах: {message}","pg.status.http":"HTTP {status} {statusText} · {ms} ms","pg.status.rpcError":"HTTP {status} · JSON-RPC error · {ms} ms","pg.status.networkError":"Сетевая ошибка · {ms} ms","pg.network.message":`Не удалось выполнить запрос к {url}
+
+{error}
+
+Возможные причины:
+• сервер недоступен
+• CORS запрещает запрос из браузера
+• неверная схема URL`,"pg.batch.title":"Batch — {n}","pg.batch.targetServer":"target:","pg.batch.send":"Отправить batch","pg.batch.sending":"Отправка…","pg.batch.clear":"Очистить","pg.batch.remove":"Удалить","pg.batch.noServer":"Нет URL сервера для batch"},ie=[{code:"en",label:"English"},{code:"ru",label:"Русский"}],X="openrpc-playground.lang",pe={en:oe,ru:le};let E=ce();const J=new Set;function _(e){return e==="en"||e==="ru"}function ce(){const e=new URLSearchParams(location.search).get("lang");if(_(e))return e;try{const r=localStorage.getItem(X);if(_(r))return r}catch{}return(navigator.language?.toLowerCase()??"").startsWith("ru")?"ru":"en"}function de(){return E}function ue(e){if(E!==e){E=e;try{localStorage.setItem(X,e)}catch{}V();for(const t of J)t(e)}}function me(e){return J.add(e),()=>{J.delete(e)}}function s(e,t){let r=pe[E][e]??e;if(t)for(const[n,o]of Object.entries(t))r=r.replaceAll(`{${n}}`,String(o));return r}function V(){document.documentElement.lang=E,document.title=s("app.title"),document.querySelectorAll("[data-i18n]").forEach(t=>{const r=t.dataset.i18n;r&&(t.textContent=s(r))}),document.querySelectorAll("[data-i18n-placeholder]").forEach(t=>{const r=t.dataset.i18nPlaceholder;r&&(t.placeholder=s(r))});const e=document.getElementById("langSwitcher");e&&e.setAttribute("aria-label",s("app.lang"))}const I="__types__";function ge(e,t){const{items:r,filter:n,activeId:o,onSelect:a}=t;if(!r.length){$(e,l`<div class="placeholder" style="padding:32px 16px;"><p>${s("placeholder.noItems")}</p></div>`);return}const d=n.trim().toLowerCase(),y=d?r.filter(c=>c.name.toLowerCase().includes(d)||(c.data.summary??"").toLowerCase().includes(d)||(c.data.description??"").toLowerCase().includes(d)):r;if(!y.length){$(e,l`<div class="placeholder" style="padding:32px 16px;"><p>${s("placeholder.noResults")}</p></div>`);return}const h=new Map;for(const c of y){const m=h.get(c.group)??[];m.push(c),h.set(c.group,m)}const f=[...h.keys()].sort((c,m)=>c===I?1:m===I?-1:c.localeCompare(m));$(e,l`${f.map(c=>{const m=c===I?s("tree.group.types"):c;return l`
+        <div class="tree-group-title">${m}</div>
+        ${h.get(c).map(i=>{const v=i.id===o?" active":"",g=i.kind==="method"?"ƒ":"◇",L=i.data.summary||i.data.description||i.name;return l`<div class="tree-item${v}" data-id="${i.id}" title="${L}">${g} ${i.name}</div>`})}
+      `})}`),e.querySelectorAll(".tree-item").forEach(c=>{c.addEventListener("click",()=>{const m=c.dataset.id;m&&a(m)})})}let he=1;function fe(e,t,r){const n=r.servers??[],o=ae(r),d=p.servers.get(t.name)??o??"",y=p.auths.get(t.name)??"",h=t.paramStructure==="by-name",c=p.drafts.get(t.name)??JSON.stringify(G(t),null,2),m=h?"pg.params.labelByName":"pg.params.labelByPosition";$(e,l`
+      ${n.length>1?l`
+            <div class="pg-row">
+              <label for="pgServer">${s("pg.server")}</label>
+              <select id="pgServer">
+                ${n.map(i=>{const v=(i.url||"").replace(/\/+$/,""),g=(i.name?i.name+" — ":"")+v;return l`<option value="${v}" ${v===d?w("selected"):u}>${g}</option>`})}
+              </select>
+            </div>
+          `:o?u:l`<p class="empty-detail">${s("pg.noServer")}</p>`}
+
+      <label class="muted" style="font-size:0.85rem;display:block;margin-bottom:4px;">${s(m)}</label>
+      <textarea id="pgParams" class="pg-editor" spellcheck="false">${c}</textarea>
+
+      <div class="pg-actions">
+        <button id="pgSend" class="btn btn-primary">${s("pg.send")}</button>
+        <button id="pgAddBatch" class="btn">${s("pg.addToBatch")}</button>
+        <button id="pgReset" class="btn">${s("pg.reset")}</button>
+        <span class="pg-spacer"></span>
+        <span id="pgHint" class="muted" style="font-size:0.8rem;"></span>
+      </div>
+
+      <div class="pg-row" style="margin-top:8px;">
+        <label for="pgAuth">${s("pg.auth.label")}</label>
+        <input id="pgAuth" type="text" class="pg-auth"
+          placeholder="${s("pg.auth.placeholder")}"
+          value="${y}" autocomplete="off" spellcheck="false" />
+      </div>
+
+      <div id="batchContainer"></div>
+
+      <div class="pg-response" id="pgResponse">
+        <div class="pg-response-head"><span class="muted">${s("pg.response.placeholder")}</span></div>
+      </div>
+    `),ye(t,d),C()}function ye(e,t){const r=b("pgParams"),n=b("pgSend"),o=b("pgAddBatch"),a=b("pgReset"),d=b("pgHint"),y=b("pgAuth"),h=document.getElementById("pgServer");let f=t;r.addEventListener("input",()=>{p.drafts.set(e.name,r.value);try{JSON.parse(r.value||"null"),r.classList.remove("invalid"),d.textContent=""}catch{r.classList.add("invalid"),d.textContent=s("pg.invalidJson")}}),y.addEventListener("input",()=>{p.auths.set(e.name,y.value)}),h&&(f=h.value,h.addEventListener("change",()=>{f=h.value,p.servers.set(e.name,f)})),a.addEventListener("click",()=>{const i=JSON.stringify(G(e),null,2);r.value=i,p.drafts.set(e.name,i),r.classList.remove("invalid"),d.textContent=""});const c=()=>{try{const i=(r.value||"").trim();return{ok:!0,params:i===""?e.paramStructure==="by-name"?{}:[]:JSON.parse(i)}}catch(i){return{ok:!1,error:i.message}}},m=async()=>{if(!f){const g=document.getElementById("pgResponse");g&&R(g,s("pg.error.noServer"));return}const i=c();if(!i.ok){const g=document.getElementById("pgResponse");g&&R(g,s("pg.error.invalidParams",{message:i.error}));return}n.disabled=!0;const v=n.textContent??s("pg.send");n.textContent=s("pg.sending");try{const g=await se(f,e,i.params,p.auths.get(e.name)),L=document.getElementById("pgResponse");L&&W(L,g,f)}finally{const g=document.getElementById("pgSend");g?(g.disabled=!1,g.textContent=s("pg.send")):(n.disabled=!1,n.textContent=v)}};o.addEventListener("click",()=>{const i=c();if(!i.ok){const v=document.getElementById("pgResponse");v&&R(v,s("pg.error.invalidParams",{message:i.error}));return}p.batch.push({id:he++,methodName:e.name,params:i.params,serverUrl:f,auth:p.auths.get(e.name)??""}),C()}),n.addEventListener("click",()=>void m()),r.addEventListener("keydown",i=>{(i.ctrlKey||i.metaKey)&&i.key==="Enter"&&(i.preventDefault(),m())})}function C(){const e=document.getElementById("batchContainer");if(!e)return;if(!p.batch.length){e.innerHTML="";return}const t=p.batch[0].serverUrl||"—";$(e,l`
+      <div class="batch-panel">
+        <div class="batch-head">
+          <strong>${s("pg.batch.title",{n:p.batch.length})}</strong>
+          <span class="muted" style="font-family:monospace;font-size:0.78rem;">${s("pg.batch.targetServer")} ${t}</span>
+          <span class="pg-spacer"></span>
+          <button id="pgBatchSend" class="btn btn-primary" style="padding:4px 12px;font-size:0.8rem;">${s("pg.batch.send")}</button>
+          <button id="pgBatchClear" class="btn" style="padding:4px 12px;font-size:0.8rem;">${s("pg.batch.clear")}</button>
+        </div>
+        <ul class="batch-list">
+          ${p.batch.map(r=>l`
+            <li>
+              <code>${r.methodName}</code>
+              <span class="muted">#${r.id}</span>
+              <span class="batch-params">${JSON.stringify(r.params)}</span>
+              <button class="batch-remove" data-batch-id="${r.id}" title="${s("pg.batch.remove")}">×</button>
+            </li>
+          `)}
+        </ul>
+      </div>
+    `),be(e)}function be(e){const t=e.querySelector("#pgBatchSend"),r=e.querySelector("#pgBatchClear");e.querySelectorAll(".batch-remove").forEach(n=>{n.addEventListener("click",()=>{const o=Number(n.dataset.batchId);p.batch=p.batch.filter(a=>a.id!==o),C()})}),r&&r.addEventListener("click",()=>{p.batch=[],C()}),t&&t.addEventListener("click",async()=>{if(!p.batch.length)return;const n=p.batch[0];if(!n.serverUrl){const a=document.getElementById("pgResponse");a&&R(a,s("pg.batch.noServer"));return}t.disabled=!0;const o=t.textContent??s("pg.batch.send");t.textContent=s("pg.batch.sending");try{const a=await ne(n.serverUrl,p.batch,n.auth),d=document.getElementById("pgResponse");d&&W(d,a,n.serverUrl)}finally{t.disabled=!1,t.textContent=o}})}function R(e,t){$(e,l`
+      <div class="pg-response-head"><span class="pg-status err">${s("pg.error.title")}</span></div>
+      <div class="pg-empty">${t}</div>
+    `)}function W(e,t,r){let n="ok",o;t.networkError?(n="err",o=s("pg.status.networkError",{ms:t.ms})):t.ok?t.rpcError?(n="warn",o=s("pg.status.rpcError",{status:t.status,ms:t.ms})):o=s("pg.status.http",{status:t.status,statusText:t.statusText,ms:t.ms}):(n="err",o=s("pg.status.http",{status:t.status,statusText:t.statusText,ms:t.ms}));let a;t.networkError?a=l`<pre>${s("pg.network.message",{url:r,error:t.networkError})}</pre>`:t.bodyPretty?a=l`<pre>${t.bodyPretty}</pre>`:a=l`<div class="pg-empty">${s("pg.response.empty")}</div>`,$(e,l`
+      <div class="pg-response-head">
+        <span class="pg-status ${n}">${o}</span>
+        <span class="pg-spacer"></span>
+        <button class="btn" id="pgCopyResp" style="padding:4px 10px;font-size:0.75rem;">${s("pg.response.copy")}</button>
+      </div>
+      ${a}
+    `);const d=document.getElementById("pgCopyResp");d&&d.addEventListener("click",()=>{navigator.clipboard.writeText(t.bodyText||"").then(()=>{d.textContent=s("pg.response.copied"),setTimeout(()=>d.textContent=s("pg.response.copy"),1500)})})}function ve(e,t,r){const n=t.params??[];$(e,l`
+      <div class="card">
+        <h2>${t.name}</h2>
+        ${t.deprecated?l`<span class="badge" style="background:#fef3c7;color:#b45309;">${s("method.deprecated")}</span>`:u}
+
+        ${t.summary?l`<p class="summary">${t.summary}</p>`:u}
+
+        ${t.description?t.summary?l`<details class="desc-details"><summary class="muted">${s("method.descDetails")}</summary><p class="subtitle">${t.description}</p></details>`:l`<p class="subtitle">${t.description}</p>`:u}
+
+        <div class="section-title">${s("method.params.title")}</div>
+        ${n.length?l`
+              <table>
+                <thead><tr>
+                  <th>${s("method.params.name")}</th>
+                  <th>${s("method.params.type")}</th>
+                  <th>${s("method.params.required")}</th>
+                  <th>${s("method.params.description")}</th>
+                </tr></thead>
+                <tbody>
+                  ${n.map(a=>l`
+                    <tr>
+                      <td><code>${a.name??""}</code></td>
+                      <td>${O(a.schema)}</td>
+                      <td>${a.required?s("method.params.yes"):s("method.params.no")}</td>
+                      <td class="muted">${A(a.summary,a.description)}</td>
+                    </tr>
+                  `)}
+                </tbody>
+              </table>
+            `:l`<p class="empty-detail">${s("method.params.empty")}</p>`}
+
+        <div class="section-title">${s("method.result.title")}</div>
+        ${t.result?l`<p>${O(t.result.schema)}${t.result.summary||t.result.description?l` — ${A(t.result.summary,t.result.description)}`:u}</p>`:l`<p class="empty-detail">${s("method.result.empty")}</p>`}
+
+        ${t.errors&&t.errors.length?l`
+              <div class="section-title">${s("method.errors.title")}</div>
+              <table>
+                <thead><tr>
+                  <th style="width:100px;">${s("method.errors.code")}</th>
+                  <th>${s("method.errors.message")}</th>
+                </tr></thead>
+                <tbody>
+                  ${t.errors.map(a=>l`
+                    <tr><td><code>${a.code}</code></td><td>${a.message}</td></tr>
+                  `)}
+                </tbody>
+              </table>
+            `:u}
+
+        ${t.examples&&t.examples.length?l`
+              <div class="section-title">${s("method.examples.title")}</div>
+              ${t.examples.map((a,d)=>{const y=a.summary||a.name||s("method.examples.label",{n:d+1});return l`
+                  <p class="muted">${y}</p>
+                  ${a.params!==void 0?l`<pre>${N(a.params)}</pre>`:u}
+                  ${a.result!==void 0?l`<p class="muted">${s("method.examples.result")}</p><pre>${N(a.result)}</pre>`:u}
+                `})}
+            `:u}
+
+        <div class="section-title">${s("method.playground.title")}</div>
+        <div id="pgContainer"></div>
+      </div>
+    `);const o=document.getElementById("pgContainer");o&&fe(o,t,r)}function $e(e,t,r){const n=new Set(r.required??[]);$(e,l`
+      <div class="card">
+        <h2>${t}</h2>
+
+        ${r.summary?l`<p class="summary">${r.summary}</p>`:u}
+
+        ${r.description?r.summary?l`<details class="desc-details"><summary class="muted">${s("method.descDetails")}</summary><p class="subtitle">${r.description}</p></details>`:l`<p class="subtitle">${r.description}</p>`:u}
+
+        ${r.type?l`<p><span class="badge">${r.type}</span></p>`:u}
+
+        ${r.properties?l`
+              <div class="section-title">${s("type.properties.title")}</div>
+              <table>
+                <thead><tr>
+                  <th>${s("type.properties.name")}</th>
+                  <th>${s("type.properties.type")}</th>
+                  <th>${s("type.properties.description")}</th>
+                </tr></thead>
+                <tbody>
+                  ${Object.entries(r.properties).map(([o,a])=>l`
+                    <tr>
+                      <td><code>${o}${n.has(o)?" *":""}</code></td>
+                      <td>${O(a)}</td>
+                      <td class="muted">${A(a.summary,a.description)}</td>
+                    </tr>
+                  `)}
+                </tbody>
+              </table>
+            `:u}
+
+        ${r.items?l`
+              <div class="section-title">${s("type.items.title")}</div>
+              <p>${O(r.items)}</p>
+            `:u}
+
+        ${r.enum?l`
+              <div class="section-title">${s("type.enum.title")}</div>
+              <pre>${N(r.enum)}</pre>
+            `:u}
+
+        <details style="margin-top:16px;">
+          <summary class="muted" style="cursor:pointer;font-size:0.85rem;">${s("type.schema.show")}</summary>
+          <pre>${N(r)}</pre>
+        </details>
+      </div>
+    `)}const k=b("urlInput"),Se=b("loadUrlBtn"),Q=b("searchInput"),j=b("tree"),T=b("content"),x=b("langSwitcher"),we="__types__";function Ee(e){const t=[];for(const n of e.methods??[]){const o=n.name.includes(".")?n.name.split(".")[0]:"default";t.push({id:"method:"+n.name,kind:"method",name:n.name,group:o,data:n})}const r=e.components?.schemas??{};for(const n of Object.keys(r))t.push({id:"type:"+n,kind:"type",name:n,group:we,data:r[n]});return t}function M(){ge(j,{items:p.items,filter:Q.value,activeId:p.activeId,onSelect:B})}function B(e){p.activeId=e,j.querySelectorAll(".tree-item").forEach(n=>{n.classList.toggle("active",n.dataset.id===e)});const t=p.items.find(n=>n.id===e);if(!t||!p.doc)return;t.kind==="method"?ve(T,t.data,p.doc):$e(T,t.name,t.data);const r=j.querySelector(".tree-item.active");r&&r.scrollIntoView({block:"nearest"})}function Z(){$(T,l`
+      <div class="placeholder">
+        <h2>${s("placeholder.loadedNoMethods.title")}</h2>
+        <p>${s("placeholder.loadedNoMethods.text")}</p>
+      </div>
+    `)}function xe(e){p.doc=e,p.items=Ee(e),p.activeId=null,p.drafts.clear(),p.servers.clear(),p.auths.clear(),p.batch=[];const t=e.methods?.length??0,r=Object.keys(e.components?.schemas??{}).length;P(s("status.loaded",{title:e.info?.title??"OpenRPC",methods:t,types:r})),M();const n=p.items.find(o=>o.kind==="method");n?B(n.id):Z()}async function D(e){if(!e){P(s("status.emptyUrl"),!0);return}P(s("status.loading"));try{const t=await re(e);xe(t)}catch(t){P(s("status.error",{message:t.message}),!0)}}V();$(x,l`${ie.map(e=>l`<option value="${e.code}">${e.label}</option>`)}`);x.value=de();x.addEventListener("change",()=>{ue(x.value)});me(e=>{x.value=e,p.doc&&(M(),p.activeId?B(p.activeId):Z())});Se.addEventListener("click",()=>void D(k.value.trim()));k.addEventListener("keydown",e=>{e.key==="Enter"&&D(k.value.trim())});Q.addEventListener("input",M);T.addEventListener("click",e=>{const r=e.target.closest("[data-ref]");if(r){e.preventDefault();const n=r.dataset.ref;n&&B(n)}});function Le(){const e=new URLSearchParams(location.search).get("spec");if(e&&e.trim())return e.trim();const t=window.OPENRPC_SPEC_URL;if(typeof t=="string"&&t.trim())return t.trim();const r=document.querySelector('meta[name="openrpc-spec-url"]');return r?.content?.trim()?r.content.trim():null}const U=Le();U&&(k.value=U,D(U));</script>
+  <style>:root{--bg: #f8f9fc;--surface: #ffffff;--border: #e2e8f0;--text: #1e293b;--muted: #64748b;--accent: #3b82f6;--accent-soft: #eff6ff;--ok: #16a34a;--err: #dc2626;--warn: #b45309;--code-bg: #f1f5f9;--radius: 10px;--shadow: 0 1px 3px rgba(0, 0, 0, .06);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--text);line-height:1.5;min-height:100vh;display:flex;flex-direction:column}header{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 20px;display:flex;flex-wrap:wrap;align-items:center;gap:12px;box-shadow:var(--shadow);z-index:10}header h1{font-size:1.15rem;font-weight:600;white-space:nowrap}.load-bar{display:flex;flex:1;gap:8px;flex-wrap:wrap;min-width:260px}.load-bar input[type=url]{flex:1;min-width:200px;padding:8px 12px;border:1px solid var(--border);border-radius:var(--radius);font-size:.9rem;outline:none;transition:border-color .15s}.load-bar input[type=url]:focus{border-color:var(--accent)}.btn{padding:8px 16px;border:1px solid var(--border);border-radius:var(--radius);background:var(--surface);color:var(--text);font-size:.9rem;cursor:pointer;white-space:nowrap;transition:background .15s,border-color .15s}.btn:hover{background:var(--accent-soft);border-color:var(--accent)}.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}.btn-primary:hover{background:#2563eb}.btn:disabled{opacity:.6;cursor:not-allowed}.status{font-size:.85rem;color:var(--muted);padding:6px 20px;min-height:1.2em}.status.error{color:var(--err)}main{display:flex;flex:1;overflow:hidden}#sidebar{width:320px;min-width:240px;background:var(--surface);border-right:1px solid var(--border);display:flex;flex-direction:column;overflow:hidden}.search-box{padding:10px 12px;border-bottom:1px solid var(--border)}.search-box input{width:100%;padding:8px 12px;border:1px solid var(--border);border-radius:var(--radius);font-size:.9rem;outline:none}.search-box input:focus{border-color:var(--accent)}#tree{flex:1;overflow-y:auto;padding:8px 0}.tree-group-title{padding:8px 16px 4px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}.tree-item{padding:6px 16px 6px 24px;font-size:.9rem;cursor:pointer;border-left:3px solid transparent;transition:background .1s,border-color .1s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tree-item:hover{background:var(--accent-soft)}.tree-item.active{background:var(--accent-soft);border-left-color:var(--accent);font-weight:500}#content{flex:1;overflow-y:auto;padding:24px 32px}.placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:var(--muted);text-align:center;gap:8px}.placeholder h2{font-size:1.2rem;font-weight:500}.placeholder p{font-size:.9rem;max-width:420px}.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px 24px;box-shadow:var(--shadow);margin-bottom:16px}.card h2{font-size:1.25rem;margin-bottom:4px;word-break:break-word}.card .subtitle{font-size:.85rem;color:var(--muted);margin-bottom:16px}.badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:.75rem;font-weight:500;background:var(--accent-soft);color:var(--accent);margin-right:6px}.section-title{font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin:20px 0 8px}.section-title:first-of-type{margin-top:0}table{width:100%;border-collapse:collapse;font-size:.88rem}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}th{font-weight:600;color:var(--muted);font-size:.8rem;text-transform:uppercase;letter-spacing:.03em}tr:last-child td{border-bottom:none}code,pre,textarea{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:.85rem}pre{background:var(--code-bg);padding:12px 16px;border-radius:8px;overflow-x:auto;white-space:pre-wrap;word-break:break-word}.muted{color:var(--muted)}.empty-detail{color:var(--muted);font-style:italic}.pg-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px}.pg-row label{font-size:.85rem;color:var(--muted)}.pg-row select{padding:6px 10px;border:1px solid var(--border);border-radius:8px;font-size:.85rem;background:var(--surface);max-width:100%}.pg-editor{width:100%;min-height:130px;padding:10px 12px;border:1px solid var(--border);border-radius:8px;background:var(--code-bg);color:var(--text);resize:vertical;outline:none;line-height:1.45}.pg-editor:focus{border-color:var(--accent)}.pg-editor.invalid{border-color:var(--err)}.pg-actions{display:flex;gap:8px;margin:8px 0 4px;flex-wrap:wrap;align-items:center}.pg-spacer{flex:1}.pg-response{border:1px solid var(--border);border-radius:8px;background:var(--code-bg);padding:0;overflow:hidden}.pg-response-head{padding:8px 12px;background:var(--surface);border-bottom:1px solid var(--border);font-size:.8rem;display:flex;gap:12px;align-items:center;flex-wrap:wrap}.pg-status{font-weight:600}.pg-status.ok{color:var(--ok)}.pg-status.err{color:var(--err)}.pg-status.warn{color:var(--warn)}.pg-response pre{margin:0;border-radius:0;max-height:360px;overflow:auto;background:transparent}.pg-empty{padding:16px;color:var(--muted);font-style:italic;font-size:.88rem}@media (max-width: 760px){main{flex-direction:column}#sidebar{width:100%;max-height:40vh;border-right:none;border-bottom:1px solid var(--border)}#content{padding:16px}header h1{font-size:1rem}}.ref-link{color:var(--accent);text-decoration:none}.ref-link:hover{text-decoration:underline}.ref-link code{color:inherit;background:transparent;padding:0}.summary{font-size:.95rem;margin:4px 0 8px}.desc-details{margin-bottom:8px}.desc-details summary{cursor:pointer;font-size:.85rem;margin-bottom:4px}.desc-details .subtitle{margin-top:6px;margin-bottom:0}.pg-auth{flex:1;min-width:200px;padding:6px 10px;border:1px solid var(--border);border-radius:8px;font-size:.85rem;font-family:SFMono-Regular,Consolas,monospace;outline:none}.pg-auth:focus{border-color:var(--accent)}.batch-panel{margin-top:12px;border:1px solid var(--border);border-radius:8px;background:var(--surface);overflow:hidden}.batch-head{display:flex;align-items:center;padding:8px 12px;gap:8px;border-bottom:1px solid var(--border);background:var(--accent-soft);font-size:.85rem}.batch-list{list-style:none;margin:0;padding:0;max-height:160px;overflow-y:auto}.batch-list li{display:flex;align-items:center;gap:8px;padding:6px 12px;border-bottom:1px solid var(--border);font-size:.82rem}.batch-list li:last-child{border-bottom:none}.batch-params{flex:1;color:var(--muted);font-family:SFMono-Regular,Consolas,monospace;font-size:.78rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.batch-remove{background:transparent;border:none;cursor:pointer;color:var(--muted);font-size:1.1rem;line-height:1;padding:0 4px}.batch-remove:hover{color:var(--err)}.lang-switcher{padding:6px 10px;border:1px solid var(--border);border-radius:var(--radius);background:var(--surface);font-size:.85rem;cursor:pointer;outline:none;color:var(--text)}.lang-switcher:focus{border-color:var(--accent)}</style>
+  <meta name="openrpc-spec-url" content="{БазовыйURL}/openrpc.json">
+</head>
+<body>
+  <header>
+    <h1 data-i18n="app.title">OpenRPC Viewer</h1>
+    <div class="load-bar">
+      <input id="urlInput" type="url" data-i18n-placeholder="app.urlPlaceholder" placeholder="OpenRPC JSON URL" />
+      <button id="loadUrlBtn" class="btn btn-primary" data-i18n="app.load">Load</button>
+    </div>
+    <select id="langSwitcher" class="lang-switcher" aria-label="Language"></select>
+  </header>
+
+  <div class="status" id="status"></div>
+
+  <main>
+    <aside id="sidebar">
+      <div class="search-box">
+        <input id="searchInput" type="search" data-i18n-placeholder="app.searchPlaceholder" placeholder="Search…" />
+      </div>
+      <div id="tree">
+        <div class="placeholder" style="padding: 32px 16px;">
+          <p data-i18n="placeholder.noSpec">Schema not loaded. Enter a URL.</p>
+        </div>
+      </div>
+    </aside>
+
+    <section id="content">
+      <div class="placeholder">
+        <h2 data-i18n="placeholder.welcome.title">Welcome</h2>
+        <p data-i18n="placeholder.welcome.text">Load an OpenRPC document…</p>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
